@@ -1,0 +1,24 @@
+<div class="mTop5" ng-init="vm.init()">
+    <center>
+        <log-batalha log="vm.log"></log-batalha>
+    </center>
+
+    <pokemon-modal botao-confirmar="false" nome-botao-cancelar="Sair" id-modal="modal-xp" 
+    title-modal="Treinamento de {{vm.pokemonParaTreinar.nome}}" tamanho="modal-lg">
+        <table class="table table-striped text-center">
+            <tbody class="table table-striped " ng-repeat="pokemon in vm.log.treinadorUm.pokemons">
+                <tr>
+                    <td><img ng-src="./app/img/icones/{{pokemon.id + 1}}.png"></td>
+                    <td>{{pokemon.nome}}</td>
+                    <td class="destaque"><span style="margin-right: 4px">LV:</span> {{pokemon.level}}</td>
+                    <td>+ {{pokemon.expGanha}} XP</td>
+                    <td ng-if="pokemon.levelGanho > 0">+ {{pokemon.levelGanho}} LV</td>
+                    <td ng-if="pokemon.vidaGanha > 0">+ {{pokemon.vidaGanha}} HP</td>
+                    <td ng-if="pokemon.ataqueGanho > 0">+ {{pokemon.ataqueGanho}} ATK</td>
+                    <td ng-if="pokemon.defesaGanha > 0">+ {{pokemon.defesaGanha}} DEF</td>
+                </tr>
+            </tbody>
+        </table>
+    </pokemon-modal>
+
+</div>

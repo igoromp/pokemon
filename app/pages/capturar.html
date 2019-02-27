@@ -1,0 +1,11 @@
+<center ng-if="vm.tempoRestante > 0">
+    <h1>{{vm.tempoRestante}}</h1>
+</center>
+<div id="tela_capturar" ng-init="vm.init()" style="position: relative;height: 60vh;width:100%">
+    <img ng-repeat="pokemon in vm.pokemonsNaTela" 
+    class="fade icone-pokemon"
+    ng-style="{'top' : pokemon.topo, 'left' : pokemon.esquerda}"
+    style="position:absolute"
+    ng-click="vm.capturar(pokemon)"
+    ng-src="./app/img/icones/{{pokemon.id + 1}}.png"></img>
+</div>

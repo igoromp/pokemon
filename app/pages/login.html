@@ -1,0 +1,21 @@
+<div id="login" class="row justify-content-md-center mTop10">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <form ng-submit="vm.login(vm.user)">
+                    <div class="form-group">
+                        <label>Usuário</label>
+                        <input class="form-control" autocomplete="on" ng-required="true" ng-model="vm.user.email" placeholder="Usuário">
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input class="form-control" ng-required="true" ng-model="vm.user.senha" placeholder="Senha"
+                            type="password">
+                    </div>
+                    <button class="btn btn-outline-primary" type="submit">Logar</button>
+                    <a class="btn btn-outline-primary" style="float: right;" ng-if="!$root.eLogado()" href="#!/cadastrarTreinador">Cadastrar-se</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

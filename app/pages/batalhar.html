@@ -1,0 +1,68 @@
+<div ng-init="vm.init()">
+    <center ng-if="vm.tempoRestante > 0">
+        <h1>{{vm.tempoRestante}}</h1>
+    </center>
+
+    <center ng-if="vm.tempoRestante <= 0 && !vm.erro">
+        <h1>Vencedor:{{vm.log.vencedor.nome}}!</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <center><icone model="$root.user.usuario.icone.linhas"></icone></center><br>
+                <center style="color : white;" ng-style="{'background-color': vm.log.vencedor.nome === vm.log.treinadorUm.nome ?  '#139907': '#FF2B2B'}">{{$root.user.nome}}</center><br>
+                <table class="table">
+                    <thead align="center">
+                        <th align="center">Pokemon</th>
+                        <th align="center">Dano Total</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="(key,value) in vm.tabelaDanosTreinadorUm">
+                            <td align="center">{{key}}</td>
+                            <td align="center">{{value}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <center><icone model="vm.adversario.usuario.icone.linhas"></icone></center><br>
+                <center style="color : white;" ng-style="{'background-color': vm.log.vencedor.nome === vm.log.treinadorDois.nome ?  '#139907': '#FF2B2B'}">{{vm.adversario.nome}}</center><br>
+                <table class="table">
+                    <thead align="center">
+                        <th align="center">Pokemon</th>
+                        <th align="center">Dano Total</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="(key,value) in vm.tabelaDanosTreinadorDois">
+                            <td align="center">{{key}}</td>
+                            <td align="center">{{value}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <hr>
+        <log-batalha log="vm.log"></log-batalha>
+    </center>
+
+    <pokemon-modal botao-confirmar="false" nome-botao-cancelar="Sair" id-modal="modal-xp" 
+    title-modal="Pokemons de {{vm.log.treinadorUm.nome}}" tamanho="modal-lg">
+        <table class="table table-striped text-center">
+            <tbody class="table table-striped " ng-repeat="pokemon in vm.log.treinadorUm.pokemons | orderBy:'nome'">
+                <tr>
+                    <td><img ng-src="./app/img/icones/{{pokemon.id + 1}}.png"></td>
+                    <td>{{pokemon.nome}}</td>
+                    <td class="destaque"><span style="margin-right: 4px">LV:</span> {{pokemon.level}}</td>
+                    <td>+ {{pokemon.expGanha}} XP</td>
+                    <td ng-if="pokemon.levelGanho > 0">+ {{pokemon.levelGanho}} LV</td>
+                    <td ng-if="pokemon.vidaGanha > 0">+ {{pokemon.vidaGanha}} HP</td>
+                    <td ng-if="pokemon.ataqueGanho > 0">+ {{pokemon.ataqueGanho}} ATK</td>
+                    <td ng-if="pokemon.defesaGanha > 0">+ {{pokemon.defesaGanha}} DEF</td>
+                </tr>
+            </tbody>
+        </table>
+    </pokemon-modal>
+
+    <center ng-if="vm.erro && vm.tempoRestante <= 0">
+        {{vm.erro}}
+    </center>
+</div>

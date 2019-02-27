@@ -1,0 +1,292 @@
+body {
+    margin-bottom: 50px;
+}
+
+.mTop5 {
+    margin-top: 25px;
+}
+
+.mTop10 {
+    margin-top: 4%;
+}
+
+.container-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-link {
+    /* color: #fafafa; */
+}
+
+#botaoTipo {
+    float: right;
+    margin-bottom: 5px;
+}
+
+.form-control,
+#selecione {
+    /* width: 100%; */
+    margin-right: 5px;
+    padding-bottom: 7px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.table td {
+    padding: 2px;
+    vertical-align: inherit;
+    border-top: 1px solid #dee2e6;
+}
+
+.btn-block {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 6px;
+}
+
+.btn-outline-success:hover {
+    color: #ffffff;
+}
+
+.btn-block {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.nav-link {
+    /* display: block; */
+    padding: .5rem 1rem;
+}
+
+.btn-light {
+    color: #007bff;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #007bff;
+}
+
+.btn-light:hover {
+    color: #ffffff;
+    background-color: #007bff;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #007bff;
+}
+
+#sair:hover {
+    color: #ffffff;
+    background-color: #fd0303;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #000000;
+}
+
+
+.borderDiv {
+    padding: 10px 70px 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+#login .card {
+    background: #f3f3f3;
+}
+
+#btnCadastrar {
+    width: 25%;
+    float: right;
+}
+
+#btnConcluir {
+    width: 25%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+#btnCancelar {
+    width: 25%;
+}
+
+#btnAlterarCadastro {
+    width: 25%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    float: right;
+}
+
+#btnCancelarCadastro {
+    width: 25%;
+}
+
+#tab-grafico {
+    text-decoration: none;
+    font: normal 17px/1.5 Arial, Helvetica, sans-serif;
+    width: auto;
+}
+
+.borderDivTipos {
+    /* border-top: 6px solid; */
+    border-right: 6px solid;
+    border-left: 6px solid;
+    /* border-bottom: 3px solid; */
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 20px;
+    border-radius: 20px;
+    border-color: #ff0000
+}
+
+.menuLogin {
+    background-image: url("/app/img/background/pokemon01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.menuCadastro {
+    background: #c82b2b;
+}
+
+#header img {
+    background: url(/app/img/pokemon01.png);
+    background: no-repeat;
+    width: 100%;
+}
+
+.divH1 h1 {
+    text-align: center;
+    /* color: #060af0; */
+    color: #ffffff;
+    font-family: 'Arial Narrow';
+    font-weight: bold;
+    border-radius: 5px;
+    /* background-color: #f8e787; */
+    background-color: #007bff;
+    margin-bottom: -5px;
+}
+
+.btn-secondary {
+    color: #fff;
+    /* #6c757d */
+    background-color: #87898b;
+    border-color: #87898b;
+}
+
+.logVitoria {
+    background-color: #139907 !important;
+    color: #FFFFFF;
+}
+
+.logDerrota {
+    background-color: #FF2B2B !important;
+    color: #FFFFFF;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+.table-scroll tbody {
+    max-height: 345px;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-scroll tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-scroll td {
+    height: 47px;
+}
+
+hr {
+    height: 2px;
+    background-color: #000000;
+}
+
+/*
+    *Animação pra captura fazendo uso do ngAnimate
+*/
+.fade:not(.show) {
+    opacity: 1;
+}
+
+.fade.ng-enter {
+    transition: 0.1s linear all;
+    opacity: 0;
+}
+
+.fade.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.fade.ng-leave {
+    transition: 0.1s linear all;
+    opacity: 1;
+}
+
+.fade.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.icone-pokemon {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.icone,
+.editarIcone,
+.icone tr,
+.editarIcone tr,
+.icone tr td,
+.editarIcone tr td {
+    margin: 0;
+    padding: 0;
+}
+
+.icone,
+.editarIcone {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.icone,
+.editarIcone {
+    padding: 0px;
+}
+
+.editarIcone tr td {
+    border: 0.5px solid #181818;
+}
+
+.editar tr td,
+.editarIcone tr td {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.icone tr td {
+    width: 3px;
+    height: 3px;
+}

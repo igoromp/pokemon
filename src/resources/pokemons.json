@@ -1,0 +1,3625 @@
+[
+	{
+		"icone": "./app/img/icones/1.png",
+		"nome": "Bulbasaur",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 0,
+		"ataque": 13,
+		"defesa": 13,
+		"vida": 68,
+		"velocidade": 34,
+		"ataqueEspecial": 48,
+		"defesaEspecial": 64,
+		"evolucoes": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"icone": "./app/img/icones/2.png",
+		"nome": "Ivysaur",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 1,
+		"ataque": 5,
+		"defesa": 1,
+		"vida": 52,
+		"velocidade": 15,
+		"ataqueEspecial": 48,
+		"defesaEspecial": 70,
+		"evolucoes": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"icone": "./app/img/icones/3.png",
+		"nome": "Venusaur",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 2,
+		"ataque": 8,
+		"defesa": 18,
+		"vida": 37,
+		"velocidade": 18,
+		"ataqueEspecial": 64,
+		"defesaEspecial": 38,
+		"evolucoes": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"icone": "./app/img/icones/4.png",
+		"nome": "Charmander",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 3,
+		"ataque": 18,
+		"defesa": 15,
+		"vida": 61,
+		"velocidade": 32,
+		"ataqueEspecial": 67,
+		"defesaEspecial": 35,
+		"evolucoes": [
+			3,
+			4,
+			5
+		]
+	},
+	{
+		"icone": "./app/img/icones/5.png",
+		"nome": "Charmeleon",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 4,
+		"ataque": 12,
+		"defesa": 3,
+		"vida": 84,
+		"velocidade": 21,
+		"ataqueEspecial": 40,
+		"defesaEspecial": 64,
+		"evolucoes": [
+			3,
+			4,
+			5
+		]
+	},
+	{
+		"icone": "./app/img/icones/6.png",
+		"nome": "Charizard",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 5,
+		"ataque": 8,
+		"defesa": 16,
+		"vida": 67,
+		"velocidade": 29,
+		"ataqueEspecial": 65,
+		"defesaEspecial": 48,
+		"evolucoes": [
+			3,
+			4,
+			5
+		]
+	},
+	{
+		"icone": "./app/img/icones/7.png",
+		"nome": "Squirtle",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 6,
+		"ataque": 4,
+		"defesa": 15,
+		"vida": 62,
+		"velocidade": 21,
+		"ataqueEspecial": 66,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			6,
+			7,
+			8
+		]
+	},
+	{
+		"icone": "./app/img/icones/8.png",
+		"nome": "Wartortle",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 7,
+		"ataque": 9,
+		"defesa": 1,
+		"vida": 50,
+		"velocidade": 26,
+		"ataqueEspecial": 75,
+		"defesaEspecial": 35,
+		"evolucoes": [
+			6,
+			7,
+			8
+		]
+	},
+	{
+		"icone": "./app/img/icones/9.png",
+		"nome": "Blastoise",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 8,
+		"ataque": 4,
+		"defesa": 5,
+		"vida": 63,
+		"velocidade": 21,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 69,
+		"evolucoes": [
+			6,
+			7,
+			8
+		]
+	},
+	{
+		"icone": "./app/img/icones/10.png",
+		"nome": "Caterpie",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			}
+		],
+		"level": 1,
+		"id": 9,
+		"ataque": 10,
+		"defesa": 16,
+		"vida": 49,
+		"velocidade": 26,
+		"ataqueEspecial": 73,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			9,
+			10,
+			11
+		]
+	},
+	{
+		"icone": "./app/img/icones/11.png",
+		"nome": "Metapod",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			}
+		],
+		"level": 1,
+		"id": 10,
+		"ataque": 19,
+		"defesa": 15,
+		"vida": 57,
+		"velocidade": 17,
+		"ataqueEspecial": 49,
+		"defesaEspecial": 25,
+		"evolucoes": [
+			9,
+			10,
+			11
+		]
+	},
+	{
+		"icone": "./app/img/icones/12.png",
+		"nome": "Butterfree",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 11,
+		"ataque": 14,
+		"defesa": 10,
+		"vida": 83,
+		"velocidade": 27,
+		"ataqueEspecial": 25,
+		"defesaEspecial": 36,
+		"evolucoes": [
+			9,
+			10,
+			11
+		]
+	},
+	{
+		"icone": "./app/img/icones/13.png",
+		"nome": "Weedle",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 12,
+		"ataque": 13,
+		"defesa": 10,
+		"vida": 34,
+		"velocidade": 22,
+		"ataqueEspecial": 51,
+		"defesaEspecial": 66,
+		"evolucoes": [
+			12,
+			13,
+			14
+		]
+	},
+	{
+		"icone": "./app/img/icones/14.png",
+		"nome": "Kakuna",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 13,
+		"ataque": 10,
+		"defesa": 5,
+		"vida": 60,
+		"velocidade": 22,
+		"ataqueEspecial": 36,
+		"defesaEspecial": 65,
+		"evolucoes": [
+			12,
+			13,
+			14
+		]
+	},
+	{
+		"icone": "./app/img/icones/15.png",
+		"nome": "Beedrill",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 14,
+		"ataque": 2,
+		"defesa": 10,
+		"vida": 48,
+		"velocidade": 35,
+		"ataqueEspecial": 56,
+		"defesaEspecial": 45,
+		"evolucoes": [
+			12,
+			13,
+			14
+		]
+	},
+	{
+		"icone": "./app/img/icones/16.png",
+		"nome": "Pidgey",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 15,
+		"ataque": 7,
+		"defesa": 16,
+		"vida": 43,
+		"velocidade": 26,
+		"ataqueEspecial": 35,
+		"defesaEspecial": 58,
+		"evolucoes": [
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"icone": "./app/img/icones/17.png",
+		"nome": "Pidgeotto",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 16,
+		"ataque": 5,
+		"defesa": 8,
+		"vida": 99,
+		"velocidade": 16,
+		"ataqueEspecial": 48,
+		"defesaEspecial": 59,
+		"evolucoes": [
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"icone": "./app/img/icones/18.png",
+		"nome": "Pidgeot",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 17,
+		"ataque": 10,
+		"defesa": 11,
+		"vida": 70,
+		"velocidade": 29,
+		"ataqueEspecial": 31,
+		"defesaEspecial": 44,
+		"evolucoes": [
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"icone": "./app/img/icones/19.png",
+		"nome": "Rattata",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 18,
+		"ataque": 17,
+		"defesa": 7,
+		"vida": 56,
+		"velocidade": 32,
+		"ataqueEspecial": 33,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			18,
+			19
+		]
+	},
+	{
+		"icone": "./app/img/icones/20.png",
+		"nome": "Raticate",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 19,
+		"ataque": 17,
+		"defesa": 4,
+		"vida": 92,
+		"velocidade": 30,
+		"ataqueEspecial": 58,
+		"defesaEspecial": 65,
+		"evolucoes": [
+			18,
+			19
+		]
+	},
+	{
+		"icone": "./app/img/icones/21.png",
+		"nome": "Spearow",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 20,
+		"ataque": 12,
+		"defesa": 7,
+		"vida": 42,
+		"velocidade": 29,
+		"ataqueEspecial": 64,
+		"defesaEspecial": 32,
+		"evolucoes": [
+			20,
+			21
+		]
+	},
+	{
+		"icone": "./app/img/icones/22.png",
+		"nome": "Fearow",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 21,
+		"ataque": 7,
+		"defesa": 6,
+		"vida": 46,
+		"velocidade": 29,
+		"ataqueEspecial": 38,
+		"defesaEspecial": 47,
+		"evolucoes": [
+			20,
+			21
+		]
+	},
+	{
+		"icone": "./app/img/icones/23.png",
+		"nome": "Ekans",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 22,
+		"ataque": 7,
+		"defesa": 6,
+		"vida": 32,
+		"velocidade": 24,
+		"ataqueEspecial": 69,
+		"defesaEspecial": 57,
+		"evolucoes": [
+			22,
+			23
+		]
+	},
+	{
+		"icone": "./app/img/icones/24.png",
+		"nome": "Arbok",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 23,
+		"ataque": 15,
+		"defesa": 3,
+		"vida": 88,
+		"velocidade": 22,
+		"ataqueEspecial": 31,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			22,
+			23
+		]
+	},
+	{
+		"icone": "./app/img/icones/25.png",
+		"nome": "Pikachu",
+		"tipos": [
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 24,
+		"ataque": 7,
+		"defesa": 19,
+		"vida": 27,
+		"velocidade": 23,
+		"ataqueEspecial": 72,
+		"defesaEspecial": 75,
+		"evolucoes": [
+			24,
+			25
+		]
+	},
+	{
+		"icone": "./app/img/icones/26.png",
+		"nome": "Raichu",
+		"tipos": [
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 25,
+		"ataque": 12,
+		"defesa": 14,
+		"vida": 48,
+		"velocidade": 21,
+		"ataqueEspecial": 32,
+		"defesaEspecial": 43,
+		"evolucoes": [
+			24,
+			25
+		]
+	},
+	{
+		"icone": "./app/img/icones/27.png",
+		"nome": "Sandshrew",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			}
+		],
+		"level": 1,
+		"id": 26,
+		"ataque": 17,
+		"defesa": 16,
+		"vida": 77,
+		"velocidade": 32,
+		"ataqueEspecial": 55,
+		"defesaEspecial": 72,
+		"evolucoes": [
+			26,
+			27
+		]
+	},
+	{
+		"icone": "./app/img/icones/28.png",
+		"nome": "Sandslash",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			}
+		],
+		"level": 1,
+		"id": 27,
+		"ataque": 10,
+		"defesa": 2,
+		"vida": 68,
+		"velocidade": 20,
+		"ataqueEspecial": 66,
+		"defesaEspecial": 58,
+		"evolucoes": [
+			26,
+			27
+		]
+	},
+	{
+		"icone": "./app/img/icones/29.png",
+		"nome": "Nidoran-f",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 28,
+		"ataque": 10,
+		"defesa": 14,
+		"vida": 83,
+		"velocidade": 16,
+		"ataqueEspecial": 70,
+		"defesaEspecial": 49,
+		"evolucoes": [
+			28,
+			29,
+			30
+		]
+	},
+	{
+		"icone": "./app/img/icones/30.png",
+		"nome": "Nidorina",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 29,
+		"ataque": 6,
+		"defesa": 10,
+		"vida": 53,
+		"velocidade": 23,
+		"ataqueEspecial": 35,
+		"defesaEspecial": 36,
+		"evolucoes": [
+			28,
+			29,
+			30
+		]
+	},
+	{
+		"icone": "./app/img/icones/31.png",
+		"nome": "Nidoqueen",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 30,
+		"ataque": 13,
+		"defesa": 4,
+		"vida": 96,
+		"velocidade": 27,
+		"ataqueEspecial": 49,
+		"defesaEspecial": 58,
+		"evolucoes": [
+			28,
+			29,
+			30
+		]
+	},
+	{
+		"icone": "./app/img/icones/32.png",
+		"nome": "Nidoran-m",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 31,
+		"ataque": 5,
+		"defesa": 5,
+		"vida": 93,
+		"velocidade": 27,
+		"ataqueEspecial": 69,
+		"defesaEspecial": 37,
+		"evolucoes": [
+			31,
+			32,
+			33
+		]
+	},
+	{
+		"icone": "./app/img/icones/33.png",
+		"nome": "Nidorino",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 32,
+		"ataque": 14,
+		"defesa": 13,
+		"vida": 81,
+		"velocidade": 30,
+		"ataqueEspecial": 63,
+		"defesaEspecial": 54,
+		"evolucoes": [
+			31,
+			32,
+			33
+		]
+	},
+	{
+		"icone": "./app/img/icones/34.png",
+		"nome": "Nidoking",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 33,
+		"ataque": 6,
+		"defesa": 16,
+		"vida": 67,
+		"velocidade": 18,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 45,
+		"evolucoes": [
+			31,
+			32,
+			33
+		]
+	},
+	{
+		"icone": "./app/img/icones/35.png",
+		"nome": "Clefairy",
+		"tipos": [
+			{
+				"descricao": "Fada",
+				"id": "18"
+			}
+		],
+		"level": 1,
+		"id": 34,
+		"ataque": 18,
+		"defesa": 6,
+		"vida": 39,
+		"velocidade": 25,
+		"ataqueEspecial": 29,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			34,
+			35
+		]
+	},
+	{
+		"icone": "./app/img/icones/36.png",
+		"nome": "Clefable",
+		"tipos": [
+			{
+				"descricao": "Fada",
+				"id": "18"
+			}
+		],
+		"level": 1,
+		"id": 35,
+		"ataque": 1,
+		"defesa": 8,
+		"vida": 66,
+		"velocidade": 17,
+		"ataqueEspecial": 43,
+		"defesaEspecial": 32,
+		"evolucoes": [
+			34,
+			35
+		]
+	},
+	{
+		"icone": "./app/img/icones/37.png",
+		"nome": "Vulpix",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 36,
+		"ataque": 12,
+		"defesa": 17,
+		"vida": 90,
+		"velocidade": 25,
+		"ataqueEspecial": 60,
+		"defesaEspecial": 34,
+		"evolucoes": [
+			36,
+			37
+		]
+	},
+	{
+		"icone": "./app/img/icones/38.png",
+		"nome": "Ninetales",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 37,
+		"ataque": 9,
+		"defesa": 11,
+		"vida": 54,
+		"velocidade": 34,
+		"ataqueEspecial": 47,
+		"defesaEspecial": 58,
+		"evolucoes": [
+			36,
+			37
+		]
+	},
+	{
+		"icone": "./app/img/icones/39.png",
+		"nome": "Jigglypuff",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Fada",
+				"id": "18"
+			}
+		],
+		"level": 1,
+		"id": 38,
+		"ataque": 1,
+		"defesa": 17,
+		"vida": 58,
+		"velocidade": 27,
+		"ataqueEspecial": 51,
+		"defesaEspecial": 44,
+		"evolucoes": [
+			38,
+			39
+		]
+	},
+	{
+		"icone": "./app/img/icones/40.png",
+		"nome": "Wigglytuff",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Fada",
+				"id": "18"
+			}
+		],
+		"level": 1,
+		"id": 39,
+		"ataque": 10,
+		"defesa": 3,
+		"vida": 52,
+		"velocidade": 33,
+		"ataqueEspecial": 38,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			38,
+			39
+		]
+	},
+	{
+		"icone": "./app/img/icones/41.png",
+		"nome": "Zubat",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 40,
+		"ataque": 3,
+		"defesa": 7,
+		"vida": 33,
+		"velocidade": 19,
+		"ataqueEspecial": 64,
+		"defesaEspecial": 33,
+		"evolucoes": [
+			40,
+			41
+		]
+	},
+	{
+		"icone": "./app/img/icones/42.png",
+		"nome": "Golbat",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 41,
+		"ataque": 14,
+		"defesa": 17,
+		"vida": 38,
+		"velocidade": 28,
+		"ataqueEspecial": 42,
+		"defesaEspecial": 49,
+		"evolucoes": [
+			40,
+			41
+		]
+	},
+	{
+		"icone": "./app/img/icones/43.png",
+		"nome": "Oddish",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 42,
+		"ataque": 8,
+		"defesa": 1,
+		"vida": 82,
+		"velocidade": 16,
+		"ataqueEspecial": 35,
+		"defesaEspecial": 46,
+		"evolucoes": [
+			42,
+			43,
+			44
+		]
+	},
+	{
+		"icone": "./app/img/icones/44.png",
+		"nome": "Gloom",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 43,
+		"ataque": 11,
+		"defesa": 10,
+		"vida": 71,
+		"velocidade": 24,
+		"ataqueEspecial": 42,
+		"defesaEspecial": 72,
+		"evolucoes": [
+			42,
+			43,
+			44
+		]
+	},
+	{
+		"icone": "./app/img/icones/45.png",
+		"nome": "Vileplume",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 44,
+		"ataque": 10,
+		"defesa": 12,
+		"vida": 25,
+		"velocidade": 24,
+		"ataqueEspecial": 57,
+		"defesaEspecial": 75,
+		"evolucoes": [
+			42,
+			43,
+			44
+		]
+	},
+	{
+		"icone": "./app/img/icones/46.png",
+		"nome": "Paras",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Grama",
+				"id": "5"
+			}
+		],
+		"level": 1,
+		"id": 45,
+		"ataque": 9,
+		"defesa": 11,
+		"vida": 49,
+		"velocidade": 19,
+		"ataqueEspecial": 51,
+		"defesaEspecial": 35,
+		"evolucoes": [
+			45,
+			46
+		]
+	},
+	{
+		"icone": "./app/img/icones/47.png",
+		"nome": "Parasect",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Grama",
+				"id": "5"
+			}
+		],
+		"level": 1,
+		"id": 46,
+		"ataque": 2,
+		"defesa": 14,
+		"vida": 67,
+		"velocidade": 30,
+		"ataqueEspecial": 56,
+		"defesaEspecial": 65,
+		"evolucoes": [
+			45,
+			46
+		]
+	},
+	{
+		"icone": "./app/img/icones/48.png",
+		"nome": "Venonat",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 47,
+		"ataque": 4,
+		"defesa": 4,
+		"vida": 20,
+		"velocidade": 15,
+		"ataqueEspecial": 71,
+		"defesaEspecial": 49,
+		"evolucoes": [
+			47,
+			48
+		]
+	},
+	{
+		"icone": "./app/img/icones/49.png",
+		"nome": "Venomoth",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			}
+		],
+		"level": 1,
+		"id": 48,
+		"ataque": 18,
+		"defesa": 6,
+		"vida": 55,
+		"velocidade": 30,
+		"ataqueEspecial": 46,
+		"defesaEspecial": 68,
+		"evolucoes": [
+			47,
+			48
+		]
+	},
+	{
+		"icone": "./app/img/icones/50.png",
+		"nome": "Diglett",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			}
+		],
+		"level": 1,
+		"id": 49,
+		"ataque": 10,
+		"defesa": 13,
+		"vida": 96,
+		"velocidade": 20,
+		"ataqueEspecial": 36,
+		"defesaEspecial": 50,
+		"evolucoes": [
+			49,
+			50
+		]
+	},
+	{
+		"icone": "./app/img/icones/51.png",
+		"nome": "Dugtrio",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			}
+		],
+		"level": 1,
+		"id": 50,
+		"ataque": 4,
+		"defesa": 10,
+		"vida": 23,
+		"velocidade": 32,
+		"ataqueEspecial": 31,
+		"defesaEspecial": 31,
+		"evolucoes": [
+			49,
+			50
+		]
+	},
+	{
+		"icone": "./app/img/icones/52.png",
+		"nome": "Meowth",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 51,
+		"ataque": 14,
+		"defesa": 3,
+		"vida": 38,
+		"velocidade": 29,
+		"ataqueEspecial": 66,
+		"defesaEspecial": 34,
+		"evolucoes": [
+			51,
+			52
+		]
+	},
+	{
+		"icone": "./app/img/icones/53.png",
+		"nome": "Persian",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 52,
+		"ataque": 6,
+		"defesa": 17,
+		"vida": 83,
+		"velocidade": 32,
+		"ataqueEspecial": 53,
+		"defesaEspecial": 28,
+		"evolucoes": [
+			51,
+			52
+		]
+	},
+	{
+		"icone": "./app/img/icones/54.png",
+		"nome": "Psyduck",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 53,
+		"ataque": 11,
+		"defesa": 17,
+		"vida": 81,
+		"velocidade": 31,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 46,
+		"evolucoes": [
+			53,
+			54
+		]
+	},
+	{
+		"icone": "./app/img/icones/55.png",
+		"nome": "Golduck",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 54,
+		"ataque": 2,
+		"defesa": 15,
+		"vida": 82,
+		"velocidade": 30,
+		"ataqueEspecial": 59,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			53,
+			54
+		]
+	},
+	{
+		"icone": "./app/img/icones/56.png",
+		"nome": "Mankey",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 55,
+		"ataque": 13,
+		"defesa": 3,
+		"vida": 25,
+		"velocidade": 23,
+		"ataqueEspecial": 55,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			55,
+			56
+		]
+	},
+	{
+		"icone": "./app/img/icones/57.png",
+		"nome": "Primeape",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 56,
+		"ataque": 3,
+		"defesa": 15,
+		"vida": 68,
+		"velocidade": 34,
+		"ataqueEspecial": 59,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			55,
+			56
+		]
+	},
+	{
+		"icone": "./app/img/icones/58.png",
+		"nome": "Growlithe",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 57,
+		"ataque": 9,
+		"defesa": 13,
+		"vida": 60,
+		"velocidade": 19,
+		"ataqueEspecial": 63,
+		"defesaEspecial": 60,
+		"evolucoes": [
+			57,
+			58
+		]
+	},
+	{
+		"icone": "./app/img/icones/59.png",
+		"nome": "Arcanine",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 58,
+		"ataque": 17,
+		"defesa": 11,
+		"vida": 83,
+		"velocidade": 26,
+		"ataqueEspecial": 59,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			57,
+			58
+		]
+	},
+	{
+		"icone": "./app/img/icones/60.png",
+		"nome": "Poliwag",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 59,
+		"ataque": 4,
+		"defesa": 1,
+		"vida": 44,
+		"velocidade": 17,
+		"ataqueEspecial": 32,
+		"defesaEspecial": 57,
+		"evolucoes": [
+			59,
+			60,
+			61
+		]
+	},
+	{
+		"icone": "./app/img/icones/61.png",
+		"nome": "Poliwhirl",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 60,
+		"ataque": 12,
+		"defesa": 3,
+		"vida": 95,
+		"velocidade": 27,
+		"ataqueEspecial": 61,
+		"defesaEspecial": 67,
+		"evolucoes": [
+			59,
+			60,
+			61
+		]
+	},
+	{
+		"icone": "./app/img/icones/62.png",
+		"nome": "Poliwrath",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 61,
+		"ataque": 3,
+		"defesa": 15,
+		"vida": 82,
+		"velocidade": 32,
+		"ataqueEspecial": 53,
+		"defesaEspecial": 57,
+		"evolucoes": [
+			59,
+			60,
+			61
+		]
+	},
+	{
+		"icone": "./app/img/icones/63.png",
+		"nome": "Abra",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 62,
+		"ataque": 8,
+		"defesa": 3,
+		"vida": 96,
+		"velocidade": 19,
+		"ataqueEspecial": 33,
+		"defesaEspecial": 66,
+		"evolucoes": [
+			62,
+			63,
+			64
+		]
+	},
+	{
+		"icone": "./app/img/icones/64.png",
+		"nome": "Kadabra",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 63,
+		"ataque": 18,
+		"defesa": 1,
+		"vida": 94,
+		"velocidade": 26,
+		"ataqueEspecial": 38,
+		"defesaEspecial": 66,
+		"evolucoes": [
+			62,
+			63,
+			64
+		]
+	},
+	{
+		"icone": "./app/img/icones/65.png",
+		"nome": "Alakazam",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 64,
+		"ataque": 13,
+		"defesa": 6,
+		"vida": 53,
+		"velocidade": 21,
+		"ataqueEspecial": 30,
+		"defesaEspecial": 38,
+		"evolucoes": [
+			62,
+			63,
+			64
+		]
+	},
+	{
+		"icone": "./app/img/icones/66.png",
+		"nome": "Machop",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 65,
+		"ataque": 14,
+		"defesa": 4,
+		"vida": 35,
+		"velocidade": 23,
+		"ataqueEspecial": 74,
+		"defesaEspecial": 49,
+		"evolucoes": [
+			65,
+			66,
+			67
+		]
+	},
+	{
+		"icone": "./app/img/icones/67.png",
+		"nome": "Machoke",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 66,
+		"ataque": 18,
+		"defesa": 19,
+		"vida": 47,
+		"velocidade": 22,
+		"ataqueEspecial": 42,
+		"defesaEspecial": 49,
+		"evolucoes": [
+			65,
+			66,
+			67
+		]
+	},
+	{
+		"icone": "./app/img/icones/68.png",
+		"nome": "Machamp",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 67,
+		"ataque": 8,
+		"defesa": 4,
+		"vida": 40,
+		"velocidade": 16,
+		"ataqueEspecial": 35,
+		"defesaEspecial": 45,
+		"evolucoes": [
+			65,
+			66,
+			67
+		]
+	},
+	{
+		"icone": "./app/img/icones/69.png",
+		"nome": "Bellsprout",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Grama",
+				"id": "5"
+			}
+		],
+		"level": 1,
+		"id": 68,
+		"ataque": 9,
+		"defesa": 15,
+		"vida": 72,
+		"velocidade": 17,
+		"ataqueEspecial": 35,
+		"defesaEspecial": 31,
+		"evolucoes": [
+			68,
+			69,
+			70
+		]
+	},
+	{
+		"icone": "./app/img/icones/70.png",
+		"nome": "Weepinbell",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 69,
+		"ataque": 3,
+		"defesa": 5,
+		"vida": 26,
+		"velocidade": 21,
+		"ataqueEspecial": 34,
+		"defesaEspecial": 40,
+		"evolucoes": [
+			68,
+			69,
+			70
+		]
+	},
+	{
+		"icone": "./app/img/icones/71.png",
+		"nome": "Victreebel",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Grama",
+				"id": "5"
+			}
+		],
+		"level": 1,
+		"id": 70,
+		"ataque": 3,
+		"defesa": 8,
+		"vida": 33,
+		"velocidade": 29,
+		"ataqueEspecial": 72,
+		"defesaEspecial": 51,
+		"evolucoes": [
+			68,
+			69,
+			70
+		]
+	},
+	{
+		"icone": "./app/img/icones/72.png",
+		"nome": "Tentacool",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 71,
+		"ataque": 19,
+		"defesa": 5,
+		"vida": 79,
+		"velocidade": 17,
+		"ataqueEspecial": 47,
+		"defesaEspecial": 36,
+		"evolucoes": [
+			71,
+			72
+		]
+	},
+	{
+		"icone": "./app/img/icones/73.png",
+		"nome": "Tentacruel",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 72,
+		"ataque": 13,
+		"defesa": 7,
+		"vida": 58,
+		"velocidade": 31,
+		"ataqueEspecial": 72,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			71,
+			72
+		]
+	},
+	{
+		"icone": "./app/img/icones/74.png",
+		"nome": "Geodude",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 73,
+		"ataque": 15,
+		"defesa": 12,
+		"vida": 34,
+		"velocidade": 23,
+		"ataqueEspecial": 50,
+		"defesaEspecial": 64,
+		"evolucoes": [
+			73,
+			74,
+			75
+		]
+	},
+	{
+		"icone": "./app/img/icones/75.png",
+		"nome": "Graveler",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 74,
+		"ataque": 5,
+		"defesa": 2,
+		"vida": 34,
+		"velocidade": 23,
+		"ataqueEspecial": 58,
+		"defesaEspecial": 31,
+		"evolucoes": [
+			73,
+			74,
+			75
+		]
+	},
+	{
+		"icone": "./app/img/icones/76.png",
+		"nome": "Golem",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 75,
+		"ataque": 10,
+		"defesa": 15,
+		"vida": 44,
+		"velocidade": 16,
+		"ataqueEspecial": 54,
+		"defesaEspecial": 53,
+		"evolucoes": [
+			73,
+			74,
+			75
+		]
+	},
+	{
+		"icone": "./app/img/icones/77.png",
+		"nome": "Ponyta",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 76,
+		"ataque": 4,
+		"defesa": 15,
+		"vida": 73,
+		"velocidade": 34,
+		"ataqueEspecial": 39,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			76,
+			77
+		]
+	},
+	{
+		"icone": "./app/img/icones/78.png",
+		"nome": "Rapidash",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 77,
+		"ataque": 8,
+		"defesa": 15,
+		"vida": 94,
+		"velocidade": 29,
+		"ataqueEspecial": 68,
+		"defesaEspecial": 70,
+		"evolucoes": [
+			76,
+			77
+		]
+	},
+	{
+		"icone": "./app/img/icones/79.png",
+		"nome": "Slowpoke",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 78,
+		"ataque": 17,
+		"defesa": 16,
+		"vida": 74,
+		"velocidade": 19,
+		"ataqueEspecial": 63,
+		"defesaEspecial": 54,
+		"evolucoes": [
+			78,
+			79
+		]
+	},
+	{
+		"icone": "./app/img/icones/80.png",
+		"nome": "Slowbro",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 79,
+		"ataque": 9,
+		"defesa": 9,
+		"vida": 48,
+		"velocidade": 28,
+		"ataqueEspecial": 59,
+		"defesaEspecial": 72,
+		"evolucoes": [
+			78,
+			79
+		]
+	},
+	{
+		"icone": "./app/img/icones/81.png",
+		"nome": "Magnemite",
+		"tipos": [
+			{
+				"descricao": "Aço",
+				"id": "17"
+			},
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 80,
+		"ataque": 4,
+		"defesa": 8,
+		"vida": 30,
+		"velocidade": 29,
+		"ataqueEspecial": 27,
+		"defesaEspecial": 50,
+		"evolucoes": [
+			80,
+			81
+		]
+	},
+	{
+		"icone": "./app/img/icones/82.png",
+		"nome": "Magneton",
+		"tipos": [
+			{
+				"descricao": "Aço",
+				"id": "17"
+			},
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 81,
+		"ataque": 19,
+		"defesa": 6,
+		"vida": 27,
+		"velocidade": 23,
+		"ataqueEspecial": 48,
+		"defesaEspecial": 42,
+		"evolucoes": [
+			80,
+			81
+		]
+	},
+	{
+		"icone": "./app/img/icones/83.png",
+		"nome": "Farfetchd",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 82,
+		"ataque": 1,
+		"defesa": 11,
+		"vida": 76,
+		"velocidade": 34,
+		"ataqueEspecial": 67,
+		"defesaEspecial": 37,
+		"evolucoes": [
+			82
+		]
+	},
+	{
+		"icone": "./app/img/icones/84.png",
+		"nome": "Doduo",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 83,
+		"ataque": 18,
+		"defesa": 10,
+		"vida": 64,
+		"velocidade": 31,
+		"ataqueEspecial": 64,
+		"defesaEspecial": 29,
+		"evolucoes": [
+			83,
+			84
+		]
+	},
+	{
+		"icone": "./app/img/icones/85.png",
+		"nome": "Dodrio",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			},
+			{
+				"descricao": "Voador",
+				"id": "10"
+			}
+		],
+		"level": 1,
+		"id": 84,
+		"ataque": 13,
+		"defesa": 4,
+		"vida": 93,
+		"velocidade": 16,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 47,
+		"evolucoes": [
+			83,
+			84
+		]
+	},
+	{
+		"icone": "./app/img/icones/86.png",
+		"nome": "Seel",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 85,
+		"ataque": 10,
+		"defesa": 7,
+		"vida": 59,
+		"velocidade": 33,
+		"ataqueEspecial": 32,
+		"defesaEspecial": 55,
+		"evolucoes": [
+			85,
+			86
+		]
+	},
+	{
+		"icone": "./app/img/icones/87.png",
+		"nome": "Dewgong",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			},
+			{
+				"descricao": "Gelo",
+				"id": "6"
+			}
+		],
+		"level": 1,
+		"id": 86,
+		"ataque": 7,
+		"defesa": 13,
+		"vida": 42,
+		"velocidade": 35,
+		"ataqueEspecial": 46,
+		"defesaEspecial": 50,
+		"evolucoes": [
+			85,
+			86
+		]
+	},
+	{
+		"icone": "./app/img/icones/88.png",
+		"nome": "Grimer",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 87,
+		"ataque": 2,
+		"defesa": 6,
+		"vida": 48,
+		"velocidade": 25,
+		"ataqueEspecial": 25,
+		"defesaEspecial": 69,
+		"evolucoes": [
+			87,
+			88
+		]
+	},
+	{
+		"icone": "./app/img/icones/89.png",
+		"nome": "Muk",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 88,
+		"ataque": 10,
+		"defesa": 10,
+		"vida": 62,
+		"velocidade": 30,
+		"ataqueEspecial": 58,
+		"defesaEspecial": 40,
+		"evolucoes": [
+			87,
+			88
+		]
+	},
+	{
+		"icone": "./app/img/icones/90.png",
+		"nome": "Shellder",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 89,
+		"ataque": 16,
+		"defesa": 11,
+		"vida": 93,
+		"velocidade": 27,
+		"ataqueEspecial": 73,
+		"defesaEspecial": 58,
+		"evolucoes": [
+			89,
+			90
+		]
+	},
+	{
+		"icone": "./app/img/icones/91.png",
+		"nome": "Cloyster",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			},
+			{
+				"descricao": "Gelo",
+				"id": "6"
+			}
+		],
+		"level": 1,
+		"id": 90,
+		"ataque": 10,
+		"defesa": 10,
+		"vida": 26,
+		"velocidade": 28,
+		"ataqueEspecial": 49,
+		"defesaEspecial": 28,
+		"evolucoes": [
+			89,
+			90
+		]
+	},
+	{
+		"icone": "./app/img/icones/92.png",
+		"nome": "Gastly",
+		"tipos": [
+			{
+				"descricao": "Fantasma",
+				"id": "14"
+			},
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 91,
+		"ataque": 3,
+		"defesa": 6,
+		"vida": 62,
+		"velocidade": 18,
+		"ataqueEspecial": 36,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			91,
+			92,
+			93
+		]
+	},
+	{
+		"icone": "./app/img/icones/93.png",
+		"nome": "Haunter",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Fantasma",
+				"id": "14"
+			}
+		],
+		"level": 1,
+		"id": 92,
+		"ataque": 5,
+		"defesa": 16,
+		"vida": 38,
+		"velocidade": 20,
+		"ataqueEspecial": 71,
+		"defesaEspecial": 40,
+		"evolucoes": [
+			91,
+			92,
+			93
+		]
+	},
+	{
+		"icone": "./app/img/icones/94.png",
+		"nome": "Gengar",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			},
+			{
+				"descricao": "Fantasma",
+				"id": "14"
+			}
+		],
+		"level": 1,
+		"id": 93,
+		"ataque": 1,
+		"defesa": 11,
+		"vida": 33,
+		"velocidade": 31,
+		"ataqueEspecial": 25,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			91,
+			92,
+			93
+		]
+	},
+	{
+		"icone": "./app/img/icones/95.png",
+		"nome": "Onix",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 94,
+		"ataque": 16,
+		"defesa": 1,
+		"vida": 20,
+		"velocidade": 22,
+		"ataqueEspecial": 63,
+		"defesaEspecial": 56,
+		"evolucoes": [
+			94
+		]
+	},
+	{
+		"icone": "./app/img/icones/96.png",
+		"nome": "Drowzee",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 95,
+		"ataque": 6,
+		"defesa": 2,
+		"vida": 70,
+		"velocidade": 25,
+		"ataqueEspecial": 27,
+		"defesaEspecial": 50,
+		"evolucoes": [
+			95,
+			96
+		]
+	},
+	{
+		"icone": "./app/img/icones/97.png",
+		"nome": "Hypno",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 96,
+		"ataque": 14,
+		"defesa": 14,
+		"vida": 93,
+		"velocidade": 24,
+		"ataqueEspecial": 46,
+		"defesaEspecial": 51,
+		"evolucoes": [
+			95,
+			96
+		]
+	},
+	{
+		"icone": "./app/img/icones/98.png",
+		"nome": "Krabby",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 97,
+		"ataque": 8,
+		"defesa": 11,
+		"vida": 60,
+		"velocidade": 30,
+		"ataqueEspecial": 36,
+		"defesaEspecial": 68,
+		"evolucoes": [
+			97,
+			98
+		]
+	},
+	{
+		"icone": "./app/img/icones/99.png",
+		"nome": "Kingler",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 98,
+		"ataque": 11,
+		"defesa": 5,
+		"vida": 22,
+		"velocidade": 21,
+		"ataqueEspecial": 73,
+		"defesaEspecial": 47,
+		"evolucoes": [
+			97,
+			98
+		]
+	},
+	{
+		"icone": "./app/img/icones/100.png",
+		"nome": "Voltorb",
+		"tipos": [
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 99,
+		"ataque": 18,
+		"defesa": 8,
+		"vida": 66,
+		"velocidade": 26,
+		"ataqueEspecial": 65,
+		"defesaEspecial": 26,
+		"evolucoes": [
+			99,
+			100
+		]
+	},
+	{
+		"icone": "./app/img/icones/101.png",
+		"nome": "Electrode",
+		"tipos": [
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 100,
+		"ataque": 6,
+		"defesa": 13,
+		"vida": 22,
+		"velocidade": 26,
+		"ataqueEspecial": 41,
+		"defesaEspecial": 65,
+		"evolucoes": [
+			99,
+			100
+		]
+	},
+	{
+		"icone": "./app/img/icones/102.png",
+		"nome": "Exeggcute",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 101,
+		"ataque": 15,
+		"defesa": 1,
+		"vida": 33,
+		"velocidade": 32,
+		"ataqueEspecial": 62,
+		"defesaEspecial": 62,
+		"evolucoes": [
+			101,
+			102
+		]
+	},
+	{
+		"icone": "./app/img/icones/103.png",
+		"nome": "Exeggutor",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 102,
+		"ataque": 8,
+		"defesa": 15,
+		"vida": 64,
+		"velocidade": 29,
+		"ataqueEspecial": 61,
+		"defesaEspecial": 44,
+		"evolucoes": [
+			101,
+			102
+		]
+	},
+	{
+		"icone": "./app/img/icones/104.png",
+		"nome": "Cubone",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			}
+		],
+		"level": 1,
+		"id": 103,
+		"ataque": 13,
+		"defesa": 15,
+		"vida": 34,
+		"velocidade": 22,
+		"ataqueEspecial": 30,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			103,
+			104
+		]
+	},
+	{
+		"icone": "./app/img/icones/105.png",
+		"nome": "Marowak",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			}
+		],
+		"level": 1,
+		"id": 104,
+		"ataque": 8,
+		"defesa": 5,
+		"vida": 21,
+		"velocidade": 19,
+		"ataqueEspecial": 54,
+		"defesaEspecial": 55,
+		"evolucoes": [
+			103,
+			104
+		]
+	},
+	{
+		"icone": "./app/img/icones/106.png",
+		"nome": "Hitmonlee",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 105,
+		"ataque": 13,
+		"defesa": 4,
+		"vida": 89,
+		"velocidade": 22,
+		"ataqueEspecial": 39,
+		"defesaEspecial": 64,
+		"evolucoes": [
+			105
+		]
+	},
+	{
+		"icone": "./app/img/icones/107.png",
+		"nome": "Hitmonchan",
+		"tipos": [
+			{
+				"descricao": "Lutador",
+				"id": "7"
+			}
+		],
+		"level": 1,
+		"id": 106,
+		"ataque": 3,
+		"defesa": 9,
+		"vida": 69,
+		"velocidade": 22,
+		"ataqueEspecial": 56,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			106
+		]
+	},
+	{
+		"icone": "./app/img/icones/108.png",
+		"nome": "Lickitung",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 107,
+		"ataque": 16,
+		"defesa": 13,
+		"vida": 88,
+		"velocidade": 33,
+		"ataqueEspecial": 72,
+		"defesaEspecial": 55,
+		"evolucoes": [
+			107
+		]
+	},
+	{
+		"icone": "./app/img/icones/109.png",
+		"nome": "Koffing",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 108,
+		"ataque": 14,
+		"defesa": 3,
+		"vida": 88,
+		"velocidade": 34,
+		"ataqueEspecial": 69,
+		"defesaEspecial": 68,
+		"evolucoes": [
+			108,
+			109
+		]
+	},
+	{
+		"icone": "./app/img/icones/110.png",
+		"nome": "Weezing",
+		"tipos": [
+			{
+				"descricao": "Venenoso",
+				"id": "8"
+			}
+		],
+		"level": 1,
+		"id": 109,
+		"ataque": 6,
+		"defesa": 10,
+		"vida": 28,
+		"velocidade": 26,
+		"ataqueEspecial": 53,
+		"defesaEspecial": 69,
+		"evolucoes": [
+			108,
+			109
+		]
+	},
+	{
+		"icone": "./app/img/icones/111.png",
+		"nome": "Rhyhorn",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 110,
+		"ataque": 5,
+		"defesa": 17,
+		"vida": 27,
+		"velocidade": 24,
+		"ataqueEspecial": 27,
+		"defesaEspecial": 47,
+		"evolucoes": [
+			110,
+			111
+		]
+	},
+	{
+		"icone": "./app/img/icones/112.png",
+		"nome": "Rhydon",
+		"tipos": [
+			{
+				"descricao": "Terrestre",
+				"id": "9"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 111,
+		"ataque": 11,
+		"defesa": 16,
+		"vida": 71,
+		"velocidade": 17,
+		"ataqueEspecial": 65,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			110,
+			111
+		]
+	},
+	{
+		"icone": "./app/img/icones/113.png",
+		"nome": "Chansey",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 112,
+		"ataque": 6,
+		"defesa": 17,
+		"vida": 23,
+		"velocidade": 26,
+		"ataqueEspecial": 45,
+		"defesaEspecial": 48,
+		"evolucoes": [
+			112
+		]
+	},
+	{
+		"icone": "./app/img/icones/114.png",
+		"nome": "Tangela",
+		"tipos": [
+			{
+				"descricao": "Grama",
+				"id": "5"
+			}
+		],
+		"level": 1,
+		"id": 113,
+		"ataque": 1,
+		"defesa": 6,
+		"vida": 49,
+		"velocidade": 33,
+		"ataqueEspecial": 71,
+		"defesaEspecial": 48,
+		"evolucoes": [
+			113
+		]
+	},
+	{
+		"icone": "./app/img/icones/115.png",
+		"nome": "Kangaskhan",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 114,
+		"ataque": 15,
+		"defesa": 12,
+		"vida": 54,
+		"velocidade": 21,
+		"ataqueEspecial": 26,
+		"defesaEspecial": 70,
+		"evolucoes": [
+			114
+		]
+	},
+	{
+		"icone": "./app/img/icones/116.png",
+		"nome": "Horsea",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 115,
+		"ataque": 7,
+		"defesa": 15,
+		"vida": 86,
+		"velocidade": 35,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			115,
+			116
+		]
+	},
+	{
+		"icone": "./app/img/icones/117.png",
+		"nome": "Seadra",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 116,
+		"ataque": 12,
+		"defesa": 1,
+		"vida": 59,
+		"velocidade": 22,
+		"ataqueEspecial": 31,
+		"defesaEspecial": 74,
+		"evolucoes": [
+			115,
+			116
+		]
+	},
+	{
+		"icone": "./app/img/icones/118.png",
+		"nome": "Goldeen",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 117,
+		"ataque": 10,
+		"defesa": 6,
+		"vida": 22,
+		"velocidade": 20,
+		"ataqueEspecial": 60,
+		"defesaEspecial": 31,
+		"evolucoes": [
+			117,
+			118
+		]
+	},
+	{
+		"icone": "./app/img/icones/119.png",
+		"nome": "Seaking",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 118,
+		"ataque": 15,
+		"defesa": 18,
+		"vida": 79,
+		"velocidade": 23,
+		"ataqueEspecial": 60,
+		"defesaEspecial": 62,
+		"evolucoes": [
+			117,
+			118
+		]
+	},
+	{
+		"icone": "./app/img/icones/120.png",
+		"nome": "Staryu",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 119,
+		"ataque": 12,
+		"defesa": 14,
+		"vida": 22,
+		"velocidade": 35,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 73,
+		"evolucoes": [
+			119,
+			120
+		]
+	},
+	{
+		"icone": "./app/img/icones/121.png",
+		"nome": "Starmie",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 120,
+		"ataque": 3,
+		"defesa": 19,
+		"vida": 39,
+		"velocidade": 31,
+		"ataqueEspecial": 51,
+		"defesaEspecial": 51,
+		"evolucoes": [
+			119,
+			120
+		]
+	},
+	{
+		"icone": "./app/img/icones/122.png",
+		"nome": "Mr-mime",
+		"tipos": [
+			{
+				"descricao": "Fada",
+				"id": "18"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 121,
+		"ataque": 14,
+		"defesa": 5,
+		"vida": 43,
+		"velocidade": 17,
+		"ataqueEspecial": 30,
+		"defesaEspecial": 55,
+		"evolucoes": [
+			121
+		]
+	},
+	{
+		"icone": "./app/img/icones/123.png",
+		"nome": "Scyther",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			}
+		],
+		"level": 1,
+		"id": 122,
+		"ataque": 16,
+		"defesa": 8,
+		"vida": 80,
+		"velocidade": 23,
+		"ataqueEspecial": 68,
+		"defesaEspecial": 43,
+		"evolucoes": [
+			122
+		]
+	},
+	{
+		"icone": "./app/img/icones/124.png",
+		"nome": "Jynx",
+		"tipos": [
+			{
+				"descricao": "Gelo",
+				"id": "6"
+			},
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 123,
+		"ataque": 5,
+		"defesa": 6,
+		"vida": 62,
+		"velocidade": 26,
+		"ataqueEspecial": 44,
+		"defesaEspecial": 41,
+		"evolucoes": [
+			123
+		]
+	},
+	{
+		"icone": "./app/img/icones/125.png",
+		"nome": "Electabuzz",
+		"tipos": [
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 124,
+		"ataque": 1,
+		"defesa": 2,
+		"vida": 21,
+		"velocidade": 30,
+		"ataqueEspecial": 54,
+		"defesaEspecial": 28,
+		"evolucoes": [
+			124
+		]
+	},
+	{
+		"icone": "./app/img/icones/126.png",
+		"nome": "Magmar",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 125,
+		"ataque": 18,
+		"defesa": 16,
+		"vida": 39,
+		"velocidade": 19,
+		"ataqueEspecial": 47,
+		"defesaEspecial": 56,
+		"evolucoes": [
+			125
+		]
+	},
+	{
+		"icone": "./app/img/icones/127.png",
+		"nome": "Pinsir",
+		"tipos": [
+			{
+				"descricao": "Inseto",
+				"id": "12"
+			}
+		],
+		"level": 1,
+		"id": 126,
+		"ataque": 17,
+		"defesa": 10,
+		"vida": 97,
+		"velocidade": 15,
+		"ataqueEspecial": 72,
+		"defesaEspecial": 61,
+		"evolucoes": [
+			126
+		]
+	},
+	{
+		"icone": "./app/img/icones/128.png",
+		"nome": "Tauros",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 127,
+		"ataque": 16,
+		"defesa": 8,
+		"vida": 76,
+		"velocidade": 24,
+		"ataqueEspecial": 53,
+		"defesaEspecial": 71,
+		"evolucoes": [
+			127
+		]
+	},
+	{
+		"icone": "./app/img/icones/129.png",
+		"nome": "Magikarp",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 128,
+		"ataque": 4,
+		"defesa": 9,
+		"vida": 53,
+		"velocidade": 31,
+		"ataqueEspecial": 31,
+		"defesaEspecial": 44,
+		"evolucoes": [
+			128,
+			129
+		]
+	},
+	{
+		"icone": "./app/img/icones/130.png",
+		"nome": "Gyarados",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 129,
+		"ataque": 1,
+		"defesa": 9,
+		"vida": 38,
+		"velocidade": 31,
+		"ataqueEspecial": 38,
+		"defesaEspecial": 45,
+		"evolucoes": [
+			128,
+			129
+		]
+	},
+	{
+		"icone": "./app/img/icones/131.png",
+		"nome": "Lapras",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			},
+			{
+				"descricao": "Gelo",
+				"id": "6"
+			}
+		],
+		"level": 1,
+		"id": 130,
+		"ataque": 9,
+		"defesa": 10,
+		"vida": 42,
+		"velocidade": 22,
+		"ataqueEspecial": 49,
+		"defesaEspecial": 45,
+		"evolucoes": [
+			130
+		]
+	},
+	{
+		"icone": "./app/img/icones/132.png",
+		"nome": "Ditto",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 131,
+		"ataque": 10,
+		"defesa": 14,
+		"vida": 87,
+		"velocidade": 28,
+		"ataqueEspecial": 74,
+		"defesaEspecial": 66,
+		"evolucoes": [
+			131
+		]
+	},
+	{
+		"icone": "./app/img/icones/133.png",
+		"nome": "Eevee",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 132,
+		"ataque": 5,
+		"defesa": 6,
+		"vida": 80,
+		"velocidade": 32,
+		"ataqueEspecial": 30,
+		"defesaEspecial": 31,
+		"evolucoes": [
+			132,
+			133,
+			134,
+			135
+		]
+	},
+	{
+		"icone": "./app/img/icones/134.png",
+		"nome": "Vaporeon",
+		"tipos": [
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 133,
+		"ataque": 11,
+		"defesa": 14,
+		"vida": 48,
+		"velocidade": 21,
+		"ataqueEspecial": 67,
+		"defesaEspecial": 28,
+		"evolucoes": [
+			132,
+			133,
+			134,
+			135
+		]
+	},
+	{
+		"icone": "./app/img/icones/135.png",
+		"nome": "Jolteon",
+		"tipos": [
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 134,
+		"ataque": 8,
+		"defesa": 17,
+		"vida": 40,
+		"velocidade": 16,
+		"ataqueEspecial": 58,
+		"defesaEspecial": 54,
+		"evolucoes": [
+			132,
+			133,
+			134,
+			135
+		]
+	},
+	{
+		"icone": "./app/img/icones/136.png",
+		"nome": "Flareon",
+		"tipos": [
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 135,
+		"ataque": 12,
+		"defesa": 4,
+		"vida": 80,
+		"velocidade": 33,
+		"ataqueEspecial": 45,
+		"defesaEspecial": 37,
+		"evolucoes": [
+			132,
+			133,
+			134,
+			135
+		]
+	},
+	{
+		"icone": "./app/img/icones/137.png",
+		"nome": "Porygon",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 136,
+		"ataque": 2,
+		"defesa": 3,
+		"vida": 67,
+		"velocidade": 16,
+		"ataqueEspecial": 60,
+		"defesaEspecial": 61,
+		"evolucoes": [
+			136
+		]
+	},
+	{
+		"icone": "./app/img/icones/138.png",
+		"nome": "Omanyte",
+		"tipos": [
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 137,
+		"ataque": 8,
+		"defesa": 18,
+		"vida": 50,
+		"velocidade": 19,
+		"ataqueEspecial": 73,
+		"defesaEspecial": 43,
+		"evolucoes": [
+			137,
+			138
+		]
+	},
+	{
+		"icone": "./app/img/icones/139.png",
+		"nome": "Omastar",
+		"tipos": [
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 138,
+		"ataque": 13,
+		"defesa": 18,
+		"vida": 58,
+		"velocidade": 32,
+		"ataqueEspecial": 65,
+		"defesaEspecial": 52,
+		"evolucoes": [
+			137,
+			138
+		]
+	},
+	{
+		"icone": "./app/img/icones/140.png",
+		"nome": "Kabuto",
+		"tipos": [
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 139,
+		"ataque": 8,
+		"defesa": 12,
+		"vida": 21,
+		"velocidade": 29,
+		"ataqueEspecial": 29,
+		"defesaEspecial": 59,
+		"evolucoes": [
+			139,
+			140
+		]
+	},
+	{
+		"icone": "./app/img/icones/141.png",
+		"nome": "Kabutops",
+		"tipos": [
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			},
+			{
+				"descricao": "Agua",
+				"id": "3"
+			}
+		],
+		"level": 1,
+		"id": 140,
+		"ataque": 1,
+		"defesa": 18,
+		"vida": 94,
+		"velocidade": 29,
+		"ataqueEspecial": 25,
+		"defesaEspecial": 47,
+		"evolucoes": [
+			139,
+			140
+		]
+	},
+	{
+		"icone": "./app/img/icones/142.png",
+		"nome": "Aerodactyl",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Pedra",
+				"id": "13"
+			}
+		],
+		"level": 1,
+		"id": 141,
+		"ataque": 14,
+		"defesa": 5,
+		"vida": 27,
+		"velocidade": 16,
+		"ataqueEspecial": 56,
+		"defesaEspecial": 63,
+		"evolucoes": [
+			141
+		]
+	},
+	{
+		"icone": "./app/img/icones/143.png",
+		"nome": "Snorlax",
+		"tipos": [
+			{
+				"descricao": "Normal",
+				"id": "1"
+			}
+		],
+		"level": 1,
+		"id": 142,
+		"ataque": 4,
+		"defesa": 9,
+		"vida": 21,
+		"velocidade": 33,
+		"ataqueEspecial": 58,
+		"defesaEspecial": 27,
+		"evolucoes": [
+			142
+		]
+	},
+	{
+		"icone": "./app/img/icones/144.png",
+		"nome": "Articuno",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Gelo",
+				"id": "6"
+			}
+		],
+		"level": 1,
+		"id": 143,
+		"ataque": 1,
+		"defesa": 15,
+		"vida": 96,
+		"velocidade": 19,
+		"ataqueEspecial": 40,
+		"defesaEspecial": 48,
+		"evolucoes": [
+			143
+		]
+	},
+	{
+		"icone": "./app/img/icones/145.png",
+		"nome": "Zapdos",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Eletrico",
+				"id": "4"
+			}
+		],
+		"level": 1,
+		"id": 144,
+		"ataque": 15,
+		"defesa": 15,
+		"vida": 45,
+		"velocidade": 22,
+		"ataqueEspecial": 29,
+		"defesaEspecial": 59,
+		"evolucoes": [
+			144
+		]
+	},
+	{
+		"icone": "./app/img/icones/146.png",
+		"nome": "Moltres",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Fogo",
+				"id": "2"
+			}
+		],
+		"level": 1,
+		"id": 145,
+		"ataque": 11,
+		"defesa": 2,
+		"vida": 86,
+		"velocidade": 25,
+		"ataqueEspecial": 61,
+		"defesaEspecial": 53,
+		"evolucoes": [
+			145
+		]
+	},
+	{
+		"icone": "./app/img/icones/147.png",
+		"nome": "Dratini",
+		"tipos": [
+			{
+				"descricao": "Dragao",
+				"id": "15"
+			}
+		],
+		"level": 1,
+		"id": 146,
+		"ataque": 9,
+		"defesa": 7,
+		"vida": 48,
+		"velocidade": 22,
+		"ataqueEspecial": 48,
+		"defesaEspecial": 42,
+		"evolucoes": [
+			146,
+			147,
+			148
+		]
+	},
+	{
+		"icone": "./app/img/icones/148.png",
+		"nome": "Dragonair",
+		"tipos": [
+			{
+				"descricao": "Dragao",
+				"id": "15"
+			}
+		],
+		"level": 1,
+		"id": 147,
+		"ataque": 18,
+		"defesa": 19,
+		"vida": 54,
+		"velocidade": 16,
+		"ataqueEspecial": 26,
+		"defesaEspecial": 53,
+		"evolucoes": [
+			146,
+			147,
+			148
+		]
+	},
+	{
+		"icone": "./app/img/icones/149.png",
+		"nome": "Dragonite",
+		"tipos": [
+			{
+				"descricao": "Voador",
+				"id": "10"
+			},
+			{
+				"descricao": "Dragao",
+				"id": "15"
+			}
+		],
+		"level": 1,
+		"id": 148,
+		"ataque": 3,
+		"defesa": 2,
+		"vida": 73,
+		"velocidade": 29,
+		"ataqueEspecial": 36,
+		"defesaEspecial": 53,
+		"evolucoes": [
+			146,
+			147,
+			148
+		]
+	},
+	{
+		"icone": "./app/img/icones/150.png",
+		"nome": "Mewtwo",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 149,
+		"ataque": 16,
+		"defesa": 1,
+		"vida": 83,
+		"velocidade": 18,
+		"ataqueEspecial": 48,
+		"defesaEspecial": 49,
+		"evolucoes": [
+			150,
+			149
+		]
+	},
+	{
+		"icone": "./app/img/icones/151.png",
+		"nome": "Mew",
+		"tipos": [
+			{
+				"descricao": "Psiquico",
+				"id": "11"
+			}
+		],
+		"level": 1,
+		"id": 150,
+		"ataque": 10,
+		"defesa": 14,
+		"vida": 56,
+		"velocidade": 22,
+		"ataqueEspecial": 55,
+		"defesaEspecial": 68,
+		"evolucoes": [
+			150,
+			149
+		]
+	}
+]

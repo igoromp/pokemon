@@ -1,0 +1,109 @@
+[{
+        "descricao": "Normal",
+        "imunidade": ["Fantasma"],
+        "fraqueza": ["Pedra", "Aço"],
+        "forca": []
+    },
+    {
+        "descricao": "Fogo",
+        "imunidade": [],
+        "fraqueza": ["Fogo", "Agua", "Pedra", "Dragao"],
+        "forca": ["Grama", "Gelo", "Inseto", "Aço"]
+    },
+    {
+        "descricao": "Agua",
+        "imunidade": [],
+        "fraqueza": ["Agua", "Grama", "Dragao"],
+        "forca": ["Fogo", "Terreste", "Pedra"]
+    },
+    {
+        "descricao": "Eletrico",
+        "imunidade": ["Terreste"],
+        "fraqueza": ["Eletrico", "Grama", "Dragao"],
+        "forca": ["Agua", "Voador"]
+    },
+    {
+        "descricao": "Grama",
+        "imunidade": [],
+        "fraqueza": ["Fogo", "Grama", "Venenoso", "Voador", "Inseto", "Dragao", "Aço"],
+        "forca": ["Agua", "Terreste", "Pedra"]
+    },
+    {
+        "descricao": "Gelo",
+        "imunidade": [],
+        "fraqueza": ["Fogo", "Agua", "Gelo", "Aço"],
+        "forca": ["Grama", "Terreste", "Voador", "Dragao"]
+    },
+    {
+        "descricao": "Lutador",
+        "imunidade": ["Fantasma"],
+        "fraqueza": ["Venenoso", "Voador", "Psiquico", "Inseto", "Fada"],
+        "forca": ["Normal", "Gelo", "Pedra", "Sombrio", "Aço"]
+    },
+    {
+        "descricao": "Venenoso",
+        "imunidade": ["Aço"],
+        "fraqueza": ["Venenoso", "Terreste", "Pedra", "Fantasma"],
+        "forca": ["Grama", "Fada"]
+    },
+    {
+        "descricao": "Terreste",
+        "imunidade": ["Voador"],
+        "fraqueza": ["Grama", "Inseto"],
+        "forca": ["Fogo", "Eletrico", "Venenoso", "Pedra", "Aço"]
+    },
+    {
+        "descricao": "Voador",
+        "imunidade": [],
+        "fraqueza": ["Eletrico", "Pedra", "Aço"],
+        "forca": ["Grama", "Lutador", "Inseto"]
+    },
+    {
+        "descricao": "Psiquico",
+        "imunidade": ["Sombrio"],
+        "fraqueza": ["Psiquico", "Aço"],
+        "forca": ["Lutador", "Venenoso"]
+    },
+    {
+        "descricao": "Inseto",
+        "imunidade": [],
+        "fraqueza": ["Fogo", "Lutador", "Venenoso", "Voador", "Fantasma", "Aço", "Fada"],
+        "forca": ["Grama", "Psiquico", "Sombrio"]
+    },
+    {
+        "descricao": "Pedra",
+        "imunidade": [],
+        "fraqueza": ["Lutador", "Terreste", "Aço"],
+        "forca": ["Fogo", "Gelo", "Voador", "Inseto"]
+    },
+    {
+        "descricao": "Fantasma",
+        "imunidade": ["Normal"],
+        "fraqueza": ["Sombrio"],
+        "forca": ["Psiquico", "Fantasma"]
+    },
+    {
+        "descricao": "Dragao",
+        "imunidade": ["Fada"],
+        "fraqueza": ["Aço"],
+        "forca": ["Dragao"]
+    },
+    {
+        "descricao": "Sombrio",
+        "imunidade": [],
+        "fraqueza": ["Lutador", "Sombrio", "Fada"],
+        "forca": ["Psiquico", "Fantasma"]
+    },
+    {
+        "descricao": "Aço",
+        "imunidade": [],
+        "fraqueza": ["Fogo", "Agua", "Eletrico", "Aço"],
+        "forca": ["Gelo", "Pedra", "Fada"]
+    },
+    {
+        "descricao": "Fada",
+        "imunidade": [],
+        "fraqueza": ["Fogo", "Venenoso", "Aço"],
+        "forca": ["Lutador", "Dragao", "Sombrio"]
+    }
+]

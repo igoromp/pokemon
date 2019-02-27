@@ -1,0 +1,270 @@
+<div class="card row mTop5 borderDiv" ng-init="vm.init()">
+    <div>
+        <h5 style="text-align: right" ng-if="$root.user.usuario.tipoAdmin == 1">Admin: {{$root.user.nome}}</h5>
+    </div>
+    <div>
+        <h5 style="text-align: right" ng-if="$root.user.usuario.tipoAdmin != 1">User: {{$root.user.nome}}</h5>
+    </div>
+    <div class="divH1">
+        <h1>Treinadores</h1>
+    </div>
+    <table class="table table-striped">
+        <thead class="text-center">
+            <td></td>
+            <th ng-click="vm.clickColuna('nome')">Nome</th>
+            <th ng-click="vm.clickColuna('idade')">Idade</th>
+            <th ng-click="vm.clickColuna('usuario.email')">E-mail</th>
+            <th>Pokemons</th>
+            <th>Ações</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="treinador in vm.service.treinadores | orderBy : vm.coluna : vm.reverse | limitTo: 150 track by $index"
+                ng-if="treinador.usuario.tipoAdmin == 2">
+                <td>
+                    <icone model="treinador.usuario.icone.linhas"></icone>
+                </td>
+                <td ng-if="$root.user.id == treinador.id" class="destaque">{{treinador.nome}}</td>
+                <td ng-if="$root.user.id != treinador.id">{{treinador.nome}}</td>
+                <td class="text-center" ng-bind="treinador.idade"></td>
+                <td ng-bind="treinador.usuario.email"></td>
+                <td class="text-center">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-pokemons" ng-click="vm.selecionado = treinador">
+                        Exibir Pokemons</button>
+                </td>
+                <td class="text-center">
+                    <pokemon-dropdown-menu id="{{'menu-' + $index}}">
+                        <span ng-if="$root.user.usuario.tipoAdmin === 1 || $root.user.id == treinador.id">
+                            <a class="dropdown-item" ng-click="vm.editar(treinador, $index)">
+                                Editar</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#modal-exclusao" ng-click="vm.treinadorSelecionado = treinador">
+                                Excluir</a>
+                            <a class="dropdown-item" ng-click="vm.exibirLogBatalhaPorUsuario(treinador.id)">
+                                Log Batalha</a>
+                            
+                        </span>
+
+                        </span>
+                        <!-- Se não for ele mesmo ele pode batalhar -->
+                        <span ng-if="$root.user.id != treinador.id && $root.user.usuario.tipoAdmin != 1">
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#modal-batalhar" ng-click="vm.treinadorSelecionado = treinador">
+                                Batalhar</a>
+                        </span>
+                    </pokemon-dropdown-menu>
+                </td>
+            </tr>
+            <br>
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal Batalha Pokemon -->
+<pokemon-modal id-modal="modal-batalhar" nome-botao-confirmar="Batalhar" title-modal="Batalhar {{vm.treinadorSelecionado.nome}}"
+    callback-confirmar="vm.batalhar(vm.treinadorSelecionado)">
+    <div class="row">
+        <div class="col">
+            <center><span ng-repeat="pokemon in vm.treinadorSelecionado.pokemons">
+                    <img ng-src="./app/img/icones/{{pokemon.id + 1}}.png" title={{pokemon.nome}}>
+                </span>
+            </center>
+            <br>
+            <center>&#9876;Está pronto?&#9876;</center>
+        </div>
+    </div>
+</pokemon-modal>
+
+<!-- Modal Excluir Treinador -->
+<pokemon-modal id-modal="modal-exclusao" title-modal="Confirmar" callback-confirmar="vm.excluir(vm.treinadorSelecionado)">
+    <div class="row">
+        <div class="col">
+            Deseja excluir esse Treinador?
+        </div>
+    </div>
+</pokemon-modal>
+
+<!-- Modal Excluir Pokemon -->
+<pokemon-modal id-modal="modal-exclusaoPkm" title-modal="Confirmar" callback-confirmar="vm.removerPokemonDaLista(vm.pokemonModal, vm.idTreinadorModal)"
+    callback-cancelar="vm.cancelarExclusao()">
+    <div class="row">
+        <div class="col">
+            Deseja excluir <strong>{{vm.pokemonModal.nome}}</strong> ?
+        </div>
+    </div>
+</pokemon-modal>
+
+<!-- Modal Listar Pokemons do Treinador -->
+<pokemon-modal botao-confirmar="false" nome-botao-cancelar="Sair" id-modal="modal-pokemons" title-modal="Pokemons de {{vm.selecionado.nome}}"
+    tamanho="modal-lg">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped text-center">
+                <tbody class="table table-striped " ng-repeat="pokemon in vm.selecionado.pokemons | orderBy:'nome'">
+                    <tr>
+                        <td><img ng-src="./app/img/icones/{{pokemon.id + 1}}.png"></td>
+                        <td>{{pokemon.nome}}</td>
+                        <td><span style="margin-right: 4px">LV:</spa> {{pokemon.level}}</td>
+                        <td>{{pokemon.exp}} xp</td>
+                        <td style="width: 175px;"><span ng-repeat="tipo in pokemon.tipos">{{tipo.descricao}}
+                                <span ng-if="$index < pokemon.tipos.length - 1">, </span>
+                            </span></td>
+                        <td style="width: 230px;" ng-if="$root.user.usuario.tipoAdmin === 1 || $root.user.id == vm.selecionado.id">
+                            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-detalharPkm"
+                                ng-click="vm.detalhar(pokemon, vm.selecionado)">Detalhar
+                            </button>
+                            <button ng-if="$root.user.id == vm.selecionado.id" class="btn btn-sm" ng-click="vm.treinar(pokemon)">Treinar</button>
+                            <button class="btn btn-danger btn-sm" ng-click="vm.alterarValor(pokemon, vm.selecionado.id)">
+                                Remover
+                            </button>
+                            <button ng-if="$root.user.usuario.tipoAdmin == 1" class="btn btn-warning" ng-click="vm.editarPokemonDoTreinador(pokemon, vm.selecionado.id)">
+                                Editar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align:center">
+
+                <button ng-if="$root.user.usuario.tipoAdmin == 1" class="btn btn-primary" ng-click="vm.adicionarPokemonTreinador(vm.selecionado.id)">
+                    Adicionar Pokemons
+                </button>
+
+                <button ng-if="vm.selecionado.id == $root.user.id && $root.user.usuario.tipoAdmin != 1" class="btn btn-primary"
+                    ng-click="vm.capturarPokemons()">
+                    Capturar Pokemons
+                </button>
+            </div>
+
+            <pokemon-modal id-modal="modal-exclusao" title-modal="Confirmar" callback-confirmar="vm.excluir(vm.treinadorSelecionado)">
+                <div class="row">
+                    <div class="col">
+                        Deseja excluir esse Treinador?
+                    </div>
+                </div>
+            </pokemon-modal>
+        </div>
+    </div>
+</pokemon-modal>
+
+<!-- Detalhar Pokemon -->
+<pokemon-modal id-modal="modal-detalharPkm" title-modal="Detalhar Pokemon" botao-confirmar="false" nome-botao-cancelar="Fechar Detalhes"
+    tamanho="modal-md" callback-cancelar="vm.exibirLista()">
+    <div class="container">
+        <card-pokemon tab="vm.pkmTemp.id" pokemons="vm.detalharPkm"></card-pokemon>
+    </div>
+</pokemon-modal>
+
+<!-- Modal de inclusão de pokemon para um treinador -->
+<pokemon-modal id-modal="modal-inclusao" title-modal="Pokemons Disponíveis para {{vm.selecionado.nome}}"
+    botao-confirmar="false" nome-botao-cancelar="Voltar" tamanho="modal-lg" callback-cancelar="vm.sairModalInclusao()">
+    <div class="container">
+        <div class="row col-md-4">
+            <label> Buscar pokemon </label>
+        </div>
+        <div class="row col-md-12">
+            <input type="text" ng-model="vm.filtroPorNome" ng-model-options="{debounce: 400}" class="form-control"
+                style="margin-bottom: 10px" placeholder="Digite o Nome">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped table-scroll" ng-if="vm.service.pokemons.length > 0" id="modal-inclusao">
+                <thead>
+                    <th>Avatar</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th class="text-center">Level</th>
+                    <th class="text-center">Vida</th>
+                    <th class="text-center">Ataque</th>
+                    <th class="text-center">Defesa</th>
+                    <th class="text-center">Selecionar</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="pokemon in vm.service.pokemons | filter: {nome : vm.filtroPorNome} | orderBy:'id' | limitTo: 150 track by $index">
+                        <td><img ng-src="./app/img/icones/{{pokemon.id + 1}}.png"></td>
+                        <td ng-bind="pokemon.nome"></td>
+                        <td><span ng-repeat="tipo in pokemon.tipos">{{tipo.descricao}}
+                                <span ng-if="$index < pokemon.tipos.length - 1">,</span>
+                            </span></td>
+                        <td class="text-center">{{pokemon.level}}</td>
+                        <td class="text-center">{{pokemon.vida}}</td>
+                        <td class="text-center">{{pokemon.ataque}}</td>
+                        <td class="text-center">{{pokemon.defesa}}</td>
+                        <td><button class="btn btn-primary btn-block" ng-click="vm.selecionarPokemons(pokemon, vm.selecionado.id)">+</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</pokemon-modal>
+
+<!-- Modal de alteração do pokemon do treinador -->
+<pokemon-modal id-modal="modal-editar" botao-fechar="false" title-modal="Alterar {{vm.copiaPokemon.nome}}"
+    botao-confirmar="false" callback-cancelar="vm.cancelar(vm.selecionado)" tamanho="modal-lg" callback-cancelar="vm.sairModalInclusao()">
+
+    <form name="formEdit">
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input class="form-control" ng-model="vm.pokemonSelecionado.nome" ng-required="true">
+                </div>
+
+                <div>
+                    <label ng-hide="vm.pokemonSelecionado.tipos.length == 2">Inserir Tipos</label>
+                    <br>
+                    <select class="form-control" ng-hide="vm.pokemonSelecionado.tipos.length == 2" ng-change="vm.selecTipo(vm.pokemonSelecionado)"
+                        ng-model="vm.pokemonSelecionado.tipo" ng-options="tipo as tipo.descricao for tipo in vm.tipos | orderBy:'descricao'">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <div ng-if="!vm.pokemonSelecionado.tipos.length == 0" class="borderDivTipos">
+                    <table class="table" style="width: 100%; margin: 0 auto">
+                        <thead>
+                            <th>Tipo</th>
+                            <th style="text-align: right">Excluir</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="tipo in vm.pokemonSelecionado.tipos">
+                                <td style="vertical-align: middle; padding-top: 0px; padding-bottom: 0px">{{tipo.descricao}}
+                                </td>
+                                <td style="text-align: right; padding-top: 4px; padding-bottom: 4px">
+                                    <button class="btn btn-outline-danger" ng-click="vm.apagarTipoPkn($index)">X</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Level</label>
+                    <input class="form-control" type="number" ng-model="vm.pokemonSelecionado.level" ng-required="true"
+                    min="1" max="100">
+                </div>
+                <div class="form-group">
+                    <label>Vida</label>
+                    <input class="form-control" type="number" ng-model="vm.pokemonSelecionado.vida" ng-required="true">
+                        
+                </div>
+                <div class="form-group">
+                    <label>Ataque</label>
+                    <input class="form-control" type="number" ng-model="vm.pokemonSelecionado.ataque" ng-required="true">
+                </div>
+                <div class="form-group">
+                    <label>Defesa</label>
+                    <input class="form-control" type="number" ng-model="vm.pokemonSelecionado.defesa" ng-required="true">
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <button class="btn btn-primary btn-lg" ng-disabled="formEdit.$invalid || vm.pokemonSelecionado.tipos.length == 0"
+                ng-click="vm.salvarPokemon(vm.indexTreinadorSelecionado, vm.pokemonSelecionado)">Salvar</button>
+        </div>
+
+    </form>
+
+</pokemon-modal>

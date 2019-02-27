@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokemon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--PROD-->
+    <!--<link rel="stylesheet" type="css" href="./css/style.min.css">-->
+    <!--DEV-->
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/css/style.css">
+    <link rel="stylesheet" href="./app/css/jQueryTab.css">
+    <link rel="stylesheet" href="./app/css/animation.css">
+    <link rel="shortcut icon" href="./app/img/pokebola.png"/>
+
+    <script src="./app/js/assets/jquery-1.9.0.min.js"></script>
+    <script src="./app/js/assets/jQueryTab.js"></script>
+    <script src="./app/js/assets/popper.mim.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap-growl-ifightcrime/jquery.bootstrap-growl.min.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-route/angular-route.min.js"></script>
+    <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="./app/js/assets/jQueryTab.js"></script>
+    <script src="./node_modules/highcharts/highcharts.js"></script>
+    
+    <!--PROD-->
+    <!--<script src="./js/build.min.js"></script>-->
+    <!--DEV-->
+    <script src="./app/js/app.js"></script>
+    <script src="./app/js/constants/constants.js"></script>
+    <script src="./app/js/directives/pokemon-dropdown-menu-directive.js"></script>
+    <script src="./app/js/directives/pokemon-modal-directive.js"></script>
+    <script src="./app/js/directives/logBatalha-directive.js"></script>
+    <script src="./app/js/directives/card-pokemon.js"></script>
+    <script src="./app/js/directives/chart-directive.js"></script>
+    <script src="./app/js/directives/icone-directive.js"></script>
+    <script src="./app/js/controllers/cadastrarPokemon-controller.js"></script>
+    <script src="./app/js/controllers/listarPokemon-controller.js"></script>
+    <script src="./app/js/controllers/login-controller.js"></script>
+    <script src="./app/js/controllers/cadastrarTreinador-controller.js"></script>
+    <script src="./app/js/controllers/listarTreinadores-controller.js"></script>
+    <script src="./app/js/controllers/batalhar-controller.js"></script>
+    <script src="./app/js/controllers/logBatalha-controller.js"></script>
+    <script src="./app/js/controllers/capturar-controller.js"></script>
+    <script src="./app/js/controllers/treinar-controller.js"></script>
+    <script src="./app/js/services/pokemon-service.js"></script>
+    <script src="./app/js/services/user-service.js"></script>
+    <script src="./app/js/services/batalhar-service.js"></script>
+    <script src="./app/js/services/api.services.js"></script>
+    <script src="./app/js/utils/session.js"></script>
+    <script src="//localhost:35729/livereload.js"></script>
+
+</head>
+
+<body ng-app="PokemonModule" ng-class="{'menuLogin': !$root.eLogado() || $root.editarTreinador == true}">
+    <div class="container mTop10">
+        <div id="header" class="col-sm-12" ng-if="$root.eLogado() && $root.editarTreinador == false">
+            <img src="./app/img/background/pokemon04.png" title="Pokémon tem que pegar" alt="Pokémon tem que pegar" />
+            <nav style="margin-bottom: -18px; margin-top: -10px;" class="navbar navbar-dark link">
+                <a class="nav-link btn btn-light" ng-if="$root.eLogado()" href="#!/listarTreinadores">Treinadores</a>
+                <a class="nav-link btn btn-light" ng-if="$root.eLogado() && $root.user.usuario.tipoAdmin === 1" href="#!/listar">Pokémons</a>
+                <a class="nav-link btn btn-light tamanho" ng-if="$root.eLogado() && $root.user.usuario.tipoAdmin === 1" href="#!/cadastrar">Cadastrar
+                    Pokémon</a>
+                <a id="sair" class="nav-link btn btn-light" ng-if="$root.eLogado()" href="#" ng-click="$root.deslogar()" title="Sair do sistema.">Logout</a>
+                <a class="nav-link btn btn-light" ng-if="!$root.eLogado()" href="#!/login">Logar</a>
+                <a class="nav-link btn btn-light" ng-if="!$root.eLogado()" href="#!/cadastrarTreinador">Cadastrar-se</a>
+            </nav>
+        </div>
+        <div class="col-sm-12" ng-view></div>
+    </div>
+</body>
+
+</html>

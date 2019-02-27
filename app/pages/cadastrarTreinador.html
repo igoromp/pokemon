@@ -1,0 +1,69 @@
+<div class="row justify-content-md-center mTop10" ng-show="!vm.selecionarPokemons">
+    <div class="col-sm-6">
+        <div class="card">
+            <form name="cadastrarTreinadorForm" class="card-body">
+                <div class="form-group">
+                    <icone editar="true" model="vm.treinador.usuario.icone.linhas"></icone>
+                </div>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input class="form-control" ng-model="vm.treinador.nome" ng-required="true" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <label>Idade</label>
+                    <input class="form-control" ng-model="vm.treinador.idade" ng-required="true" placeholder="Idade"
+                        min="0" max="100" type="number">
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input class="form-control" ng-model="vm.treinador.usuario.email" ng-required="true" placeholder="example@email.com"
+                        type="text" ng-disabled="vm.treinador.id != undefined">
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input class="form-control" ng-model="vm.treinador.usuario.senha" ng-required="true" placeholder="Senha"
+                        type="password">
+                </div>
+                <button class="btn btn-outline-primary btn-block" ng-if="vm.treinador.id == undefined" ng-click="cadastrarTreinadorForm.$valid && vm.prosseguir(vm.treinador)">Prosseguir</button>
+                <a style="width: 100%;" class="btn btn-outline-danger btn-block" ng-if="!$root.eLogado()" href="#!/login">Cancelar</a>
+
+                <button class="btn btn-outline-primary btn-block" ng-if="vm.treinador.id != undefined" ng-click="cadastrarTreinadorForm.$valid && vm.editar(vm.treinador)">Editar</button>
+                <button style="width: 100%;" class="btn btn-outline-danger btn-block" ng-if="$root.eLogado()" ng-click="vm.cancelarEdicao()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div ng-show="vm.selecionarPokemons" class="card borderDiv mTop10" ng-class="{'menuCadastro': menuCadastro}">
+    <div class="divH1" style="margin-bottom: 15px;">
+        <h1>Escolha seus Pokémons</h1>
+    </div>
+    <table class="table table-hover table-scroll text-center">
+        <thead>
+            <th>Avatar</th>
+            <th>Nome</th>
+            <th colspan="2">Tipo</th>
+            <th>Level</th>
+            <th>Vida</th>
+            <th>Ataque</th>
+            <th>Defesa</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pokemon in vm.service.pokemon.pokemons" ng-click="vm.selecionarPokemon(pokemon)" ng-style="{'background-color': pokemon.isSelected ?  '#979797': ''}">
+                <td><img ng-src="./app/img/icones/{{pokemon.id + 1}}.png"></td>
+                <td ng-bind="pokemon.nome"></td>
+                <td colspan="2"><span ng-repeat="tipo in pokemon.tipos">{{tipo.descricao}}
+                        <span ng-if="$index < pokemon.tipos.length - 1">,</span>
+                    </span></td>
+                <td>{{pokemon.level}}</td>
+                <td>{{pokemon.vida}}</td>
+                <td>{{pokemon.ataque}}</td>
+                <td>{{pokemon.defesa}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button id="btnCancelar" class="btn btn-outline-danger" ng-if="!$root.eLogado()" ng-click="vm.voltar()">Voltar</button>
+        <!-- <a id="btnCancelar" class="btn btn-outline-danger" ng-if="!$root.eLogado()" href="#!/login">Cancelar</a> -->
+        <button id="btnConcluir" class="btn btn-outline-primary" ng-click="vm.cadastrar(vm.treinador)">Concluir</button>
+    </div>
+</div>

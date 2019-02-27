@@ -1,0 +1,496 @@
+/*
+* jQueryTab v2.0
+* Copyright Dharma Poudel (@rogercomred)
+* Free to use under the GPLv3 license.
+* http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* == quick_reset */
+*{ border:none; margin:0; padding:0; outline:none;}
+
+/*  == common styles */
+body { 
+	min-height:100%; 
+	font: normal 13px/1.5 Arial,Helvetica, sans-serif; 
+	margin-bottom:30px;}
+ul,ol{ list-style:none outside none;}
+
+.cards{
+	width:450px; margin:10px auto;
+	text-align:center;
+}
+
+.img_pokemon{
+	width:90%;
+	margin: auto;
+}
+
+.img_pokemon img{
+	width:100%;
+	margin-top: 12px;
+	padding: 10px 35px 30px 0px;
+	border-radius:15px;
+}
+
+.nome{
+	color: #FFF;
+    position: relative;
+    top: -23px;
+    left: 38px;
+    width: 170px;
+    padding: 7px 0px 7px 0px;
+    margin-bottom: -11px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.insignia{
+	top: 16px;
+    display: block;
+    position: absolute;
+    width: 72px;
+    height: 80px;
+    float: right;
+	right: 60px;
+	top: 20px;
+	/* bottom: 5px; */
+}
+
+.fogo .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/fogo.png');
+    background-repeat:no-repeat;
+    background-size:cover;	
+}
+
+.fogo .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_fogo.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.fogo .nome{
+	background: #ff8800;
+}
+
+
+.agua .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/agua.png');
+    background-repeat:no-repeat;
+    background-size:cover;	
+}
+
+.agua .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_agua.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+
+}
+
+.agua .nome{
+	background:#3D61AB;
+}
+
+.grama .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/grama.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.grama .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_grama.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.grama .nome{
+	background:#117D4A;
+}
+
+.inseto .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/inseto.png');
+    background-repeat:no-repeat;    width: 100%;
+    border-radius: 15px;
+    background-size:cover;;	
+}
+
+.inseto .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_inseto.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.inseto .nome{
+	background:#2B4933;
+}
+
+.noturno .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/noturno.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.noturno .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_noturno.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.noturno .nome{
+	background:#282829;
+}
+
+.dragao .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/dragao.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.dragao .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_dragao.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.dragao .nome{
+	background:#0A8C97;
+}
+
+.eletrico .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/eletrico.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.eletrico .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_eletrico.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.eletrico .nome{
+	background:#fbff22;
+	color: #000000;
+	
+}
+
+.fada .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/fada.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.fada .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_fada.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.fada .nome{
+	background:#B03349;
+}
+
+.lutador .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/lutador.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.lutador .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_lutador.png');
+    background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.lutador .nome{
+	background:#AE4136;
+}
+
+.voador .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/voador.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.voador .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_voador.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.voador .nome{
+	background:#36677F;
+}
+
+.fantasma .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/fantasma.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.fantasma .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_fantasma.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.fantasma .nome{
+	background:#393769;
+}
+
+.terrestre .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/terrestre.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.terrestre .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_terrestre.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.terrestre .nome{
+	background:#B9733A;
+}
+
+.gelo .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/gelo.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.gelo .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_gelo.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.gelo .nome{
+	color:#000;
+	background:#59CAEE;
+}
+
+.normal .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/normal.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.normal .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_normal.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.normal .nome{
+	background:#81515C;
+}
+
+.venenoso .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/veneno.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.venenoso .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_veneno.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.venenoso .nome{
+	background:#693C88;
+}
+
+.psiquico .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/psiquico.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.psiquico .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_psiquico.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.psiquico .nome{
+	background:#C03370;
+}
+
+
+.pedra .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/pedra.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.pedra .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_pedra.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.pedra .nome{
+	background:#442E2C;
+}
+
+.metal .imagem_fundo_pokemon{
+	background-image:url('../img/insigneas_e_fundo/metal.png');
+    background-repeat:no-repeat;
+    background-size:cover;;	
+}
+
+.metal .insignia{
+	background-image:url('../img/insigneas_e_fundo/icon_metal.png');
+    background-repeat:no-repeat;
+    background-size:100%;	
+}
+
+.metal .nome{
+	background:#54766E;
+}
+
+.tamanho{
+   width:  180px !important;
+}
+
+a:link, a:visited{
+	text-decoration:none; 
+	width: 139px;
+}
+
+a:hover{ color: #666;}
+
+/*  == tab heading */
+.tabs { border: 0; overflow:hidden; margin:0px; width: 422px;}
+.tabs li{ float:left; }
+.tabs li a{
+	/* border-top: 1px #000 solid;  */
+	border-right: 1px #000 solid;
+	border-bottom: 1px #000 solid;
+	color:#000; 
+	width: 139px;
+	display:block; 
+	font-weight:bold; 
+	padding: 15px 20px; 
+	text-transform: uppercase;
+    letter-spacing: 0.08em;
+	background:#FF0;
+	border-top-right-radius: 8px;
+}
+/* .tabs li:first-child a{ border-left: none; } */
+.tabs li a:hover{ color:#FFF; background:#FFA500;}
+.tabs .active a{ color: #FFF; background:#F00;}
+
+/* == accordion */
+/* .accordion_tabs { display:none; border-top: 1px solid #ccc; padding: 10px; font-weight: bold; background: #eee; }
+.tab_content_wrapper > .accordion_tabs:first-child{ border-top:none; }
+a.accordion_tabs:link, a.accordion_tabs:visited{ color: #21759B; }
+a.accordion_tabs:hover, a.accordion_tabs:focus{ color:#D54E21;}
+a.accordion_tabs.active{ color: #000; border-bottom: 1px solid #ccc;} */
+
+
+/*  == tab content  */
+.tab_content_wrapper{ overflow:hidden;  position:relative; transition: all .3s ease-in-out .3s; border:0;}
+
+
+/**********************************/
+
+.tab_content_wrapper .atributos{
+	display:block;
+	color:#000;
+	/* margin:0 10px 10px 10px; */
+	font-size:1rem;
+	font-weight:bold;
+	text-align: left;
+}
+
+#vantagens{
+	display:block;
+	color:#000000;
+	margin:0 10px 10px 10px;
+	font-size:1rem;
+	font-weight:bold;
+	align-self: auto;
+}
+
+.tab_content_wrapper .label{
+	display:inline-block;
+	color:#000;
+	width:84px;
+	border-left:8px solid #F00;
+	padding:7px;
+	margin:0;
+	font-weight:normal;
+}
+
+.tab_content_wrapper .label2{
+	display:inline-block;
+	color:#000;
+	width:176px;
+	border-left:8px solid #F00;
+	padding:7px;
+	margin:0 0 0 70px;
+	font-weight:normal;
+}
+
+/********************************/
+
+.tab_content{
+	transition: all .6s ease-in-out; 
+	background-image:url('../img/insigneas_e_fundo/bg-card-2.png');
+    background-repeat:no-repeat;
+    background-size:cover;	
+	width:93%;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius: 15px;
+	height: 560px;
+}
+	
+.tab_content p{
+	text-align:left;
+	margin-bottom: 6px;
+}
+.toggle_display{display:block;}
+.toggle_position{ position:absolute;}
+.toggle_border{ border:0; /*padding:15px; background:#FF0*/}
+.invert_border{ border-width: 1px 1px 0 1px;}
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 700px) {
+	.accordion_tabs{ display:block; }
+	.tab_content_wrapper{ height:auto !important;}
+	.tab_content{ transition:none; padding:10px;}
+	.toggle_display{display:none;}
+	.toggle_position{ position:relative; }
+	.toggle_border{ border-width: 1px; }
+	.cards{
+		width:90%; margin:10px auto;
+		text-align:center;
+	}
+	.tab_content_wrapper .nome{
+		color:#FFF;
+		position:relative;
+		top:-25px;
+		left:-40px;
+		padding:10px;
+		border-radius: 15px;
+		background:#F00;
+		text-transform: uppercase;
+		font-size:1.2rem;
+		
+	}
+	
+	.insignia{
+		width:80px;
+		height:100px;
+		float:right;
+		right:5px;
+		bottom:10px;
+	}	
+	
+}

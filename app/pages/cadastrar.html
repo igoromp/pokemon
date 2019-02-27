@@ -1,0 +1,45 @@
+<div class="row mTop5 borderDiv" ng-init="vm.init()">
+    <div class="col">
+        <div class="divH1" style="margin-bottom: 10px;">
+            <h1>Cadastro de Pokémons</h1>
+        </div>
+        <form ng-submit="vm.cadastrar(vm.pokemon)">
+            <div class="form-group">
+                <label>Nome</label>
+                <input class="form-control" ng-model="vm.pokemon.nome" ng-required="true">
+            </div>
+            <div class="form-group" ng-if="vm.pokemon.tipos.length < 2">
+                <label>Inserir Tipos</label>
+                <br>
+                <select class="form-control" ng-change="vm.selecTipo(vm.pokemon)" ng-model="vm.pokemon.tipo" ng-options="tipo as tipo.descricao for tipo in vm.tipos | orderBy:'descricao'">
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+            <div ng-if="!vm.pokemon.tipos.length == 0" class="borderDivTipos">
+                <table class="table table-stripe">
+                    <thead>
+                        <th>Tipo</th>
+                        <th style="text-align: right">Opções</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="tipo in vm.pokemon.tipos">
+                            <td style="vertical-align: middle; padding-top: 0px; padding-bottom: 0px">{{tipo.descricao}}
+                            </td>
+                            <td style="text-align: right; padding-top: 4px; padding-bottom: 4px">
+                                <button class="btn btn-outline-danger" ng-click="vm.apagarTipoPkn($index)">Remover Tipo</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="form-group">
+                <button id="btnCadastrar" class="btn btn-outline-primary" type="submit" ng-if="vm.pokemon.id == undefined"
+                    ng-click="vm.cadastrarPokemon()">Cadastrar</button>
+                <button id="btnAlterarCadastro" class="btn btn-outline-primary" ng-if="vm.pokemon.id != undefined"
+                    ng-click="vm.alterarPokemon()">Editar</button>
+                <button id="btnCancelarCadastro" class="btn btn-outline-danger" ng-click="vm.voltar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

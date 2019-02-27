@@ -1,0 +1,66 @@
+<div ng-init="vm.init()">
+    <div class="card row mTop5" ng-if="vm.logLuta.length > 0">
+        <table class="table table-striped">
+            <thead class="text-center">
+                <th align="center">Atacante</th>
+                <th align="center">Vs.</th>
+                <th align="center">Defensor</th>
+                <th></th>
+            </thead>
+            <tbody ng-repeat="log in vm.logLuta">
+                <tr align="center">
+                    <td ng-class="log.vencedor.id === log.treinadorUm.id ? 'logVitoria' : 'logDerrota'">{{log.treinadorUm.nome}}</td>
+                    <td>X</td>
+                    <td ng-class="log.vencedor.id === log.treinadorDois.id ? 'logVitoria' : 'logDerrota'">{{log.treinadorDois.nome}}</td>
+                    <td>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modal-detalharLog" ng-click="vm.logSelecionado = log">Detalhar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card row mTop5" ng-if="vm.logTreino.length > 0">
+        <table class="table table-striped">
+            <thead class="text-center">
+                <th colspan="3" align="center">Treinamento</th>
+                <th></th>
+            </thead>
+            <tbody ng-repeat="log in vm.logTreino">
+                <tr align="center">
+                    <td>{{log.turnos[0].pokemonUm.nome}}</td>
+                    <td>X</td>
+                    <td>{{log.turnos[0].pokemonDois.nome}}</td>
+                    <td>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modal-detalharLog" ng-click="vm.logSelecionado = log">Detalhar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="mTop5">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <button id="tab-grafico" data-toggle="tab" class="btn btn-link nav-link active" ng-click="vm.tabSelecionada(1)">Vitórias/Derrotas</button>
+            </li>
+            <li class="nav-item">
+                <button id="tab-grafico" data-toggle="tab" class="btn btn-link nav-link" ng-click="vm.tabSelecionada(2)">Dano por Pokemon</button>
+            </li>
+            <li class="nav-item">
+                <button id="tab-grafico" data-toggle="tab" class="btn btn-link nav-link" ng-click="vm.tabSelecionada(3)">Golpes por Batalha</button>
+            </li>
+        </ul>
+
+        <div align=center class="mTop5">
+            <chart ng-if="vm.graficoPizzaVitoriasDerrotas && vm.tabGrafico == 1" configuracao="vm.graficoPizzaVitoriasDerrotas"></chart>
+            <chart ng-if="vm.graficoPizzaDano && vm.tabGrafico == 2" configuracao="vm.graficoPizzaDano"></chart>
+            <chart ng-if="vm.graficoLinhaTemporal && vm.tabGrafico == 3" configuracao="vm.graficoLinhaTemporal"></chart>
+        </div>
+    </div>
+</div>
+
+<pokemon-modal id-modal="modal-detalharLog" title-modal="{{vm.logSelecionado.data | date:'dd/MM/yyyy - HH:mm'}}"
+    botao-confirmar="false" nome-botao-cancelar="Fechar" tamanho="modal-lg">
+    <log-batalha log="vm.logSelecionado" scrollable="true"></log-batalha>
+</pokemon-modal>

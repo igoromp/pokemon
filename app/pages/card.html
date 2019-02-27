@@ -1,0 +1,41 @@
+<section class="cards" ng-if="$root.eLogado()">
+     <div class="pokemons">
+          <ul class="tabs">
+               <li ng-repeat="poke in pokemons" ng-class="{active: tab == poke.id}">
+                    <a ng-click=" selecionado(poke.id)">{{poke.nome}}</a>
+               </li>
+          </ul>
+          <section class="tab_content_wrapper" style="height: 100%;">
+               <div ng-repeat="poke in pokemons" class="tab_content {{poke.tipos[0].descricao | lowercase}}" ng-if="tab == poke.id">
+                    <div class="img_pokemon">
+                         <img ng-src="../app/img/imgPokemon/{{poke.id+1}}.png" class="imagem_fundo_pokemon" />
+                    </div>
+                    <div class="nome">{{poke.nome}}</div>
+                    <span class="atributos">
+                         <p><span class="label">HP:</span> <span> {{poke.vida}} <span class="label2">VELOCIDADE:</span>{{poke.velocidade}}</p>
+                         <p><span class="label">ATAQUE:</span> {{poke.ataque}} <span class="label2">ATAQUE ESPECIAL:</span>
+                              {{poke.ataqueEspecial}}</p>
+                         <p><span class="label">DEFESA:</span> {{poke.defesa}} <span class="label2">DEFESA ESPECIAL:</span>
+                              {{poke.defesaEspecial}}</p>
+                         <span class="insignia"></span>
+                         <span id="vantagens">
+                              Vantegem:
+                              <span ng-repeat="forca in poke.afinidades.forcas">
+                                   {{forca}}
+                              </span>
+                              <br>
+                              Devantagem:
+                              <span ng-repeat="fraqueza in poke.afinidades.fraquezas">
+                                        {{fraqueza}}
+                              </span>
+                              <br>
+                              Ineficaz: 
+                              <span ng-repeat="imuni in poke.afinidades.imunidades">
+                                        {{imuni}}
+                              </span>
+                         </span>
+                    </span>
+               </div>
+          </section>
+     </div>
+</section>
